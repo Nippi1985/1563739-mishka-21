@@ -8,7 +8,7 @@
 <header class="page-header">
   <a class="page-header__logo">
     <img src="https://via.placeholder.com/113x46" width="113" height="46" alt="Милые штуки ручной работы">
-  </a>
+  </a>привет
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
     <ul class="main-nav__list site-list">
@@ -42,9 +42,9 @@
 </header>
 <main class="page-main">
   <section class="hero">
-    <h1 class="visually-hidden">Вязаные вещи ручной работы</h1>
     <div class="hero__wrapper">
-      <p class="main-header">Милые штуки ручной работы для дома</p>
+      <h1 class="visually-hidden">Вязаные вещи ручной работы</h1>
+      <p class="hero__text">Милые штуки ручной работы для дома</p>
     </div>
   </section>
   <div class="sections">
@@ -61,8 +61,8 @@
   </div>
   <section class="featured">
     <div class="featured__wrapper">
-      <h2 class="header">Вязаные корзинки</h2>
-      <span class="featured__info">Товар недели</span>
+      <h2 class="title">Вязаные корзинки</h2>
+      <span class="featured__week-product">Товар недели</span>
       <p class="featured__text">Экологически чистая пряжа,<br>
         ручная работа. Доступны в шести <br>
         расцветках, и трех размерах.</p>
@@ -77,36 +77,36 @@
       <img class="featured__image" src="https://via.placeholder.com/260x315" width="260" height="315"
            alt="Руки держащие три вязаные корзинки. Две серо-бирюзовые и одну бело-розовую">
       <p class="featured__price">Цена: 990 руб.</p>
-      <button class="button button_size_l">Заказать</button>
+      <button class="button button--size_l">Заказать</button>
     </div>
   </section>
 
   <section class="about">
     <div class="about__wrapper">
-      <h2 class="header">Коротко о нас:</h2>
+      <h2 class="title">Коротко о нас:</h2>
       <ul class="about__list">
-        <li class="about__item">
-          <p class="about__text">Экологически<br>
+        <li class="about__item about-item">
+          <p class="about-item__text">Экологически<br>
             чистые материалы</p>
         </li>
         <li class="about__item">
-          <p class="about__text">Скандинавский стиль<br>
+          <p class="about-item__text">Скандинавский стиль<br>
             по российской цене</p>
         </li>
         <li class="about__item">
-          <p class="about__text">Увеличивает лайки<br>
+          <p class="about-item__text">Увеличивает лайки<br>
             на фотографиях</p>
         </li>
         <li class="about__item">
-          <p class="about__text">Связано вручную<br>
+          <p class="about-item__text">Связано вручную<br>
             с любовью и умилением</p>
         </li>
         <li class="about__item">
-          <p class="about__text">Поддержка отечественного<br>
+          <p class="about-item__text">Поддержка отечественного<br>
             производителя</p>
         </li>
         <li class="about__item">
-          <p class="about__text">Поставляется<br>
+          <p class="about-item__text">Поставляется<br>
             в подарочной упаковке</p>
         </li>
       </ul>
@@ -114,27 +114,28 @@
   </section>
   <section class="feedback">
     <div class="feedback__wrapper">
-      <h2 class="header">Отзывы</h2>
-      <a class="button button_size_m" href="#">Написать</a>
+      <h2 class="title">Отзывы</h2>
+      <a class="button button--size_m" href="#">Написать</a>
       <div class="feedback__item">
         <img class="feedback__image" src="https://via.placeholder.com/350x457" width="350" height="457"
              alt="Вязаная салфетка лежит на столе">
-        <blockquote class="feedback__text">Я молодая мама, но всё равно фотографии не набирали
+        <blockquote class="feedback__blockquote">Я молодая мама, но всё равно фотографии не набирали
           и близко такого количества лайков, как у популярных инстамамочек.
           В отчаянии, я накупила аксессуаров и игрушек в Мишке,
           и мои фотографии сразу стали более стильными, а также набирают больше лайков!
           <cite class="feedback__cite">Анастасия Красильникова</cite>
-          <span class="feedback__social">@misssssiskras</span></blockquote>
+          <span class="feedback__social">@misssssiskras</span>
+        </blockquote>
       </div>
       <div class="feedback__buttons">
-        <button class="prev-quote" type="button">&larr;</button>
-        <button class="next-quote" type="button">&rarr;</button>
+        <button class="change-quote change-quote--prev" type="button">&larr;</button>
+        <button class="change-quote change-quote-next" type="button">&rarr;</button>
       </div>
     </div>
   </section>
   <section class="contacts">
     <div class="contacts__wrapper">
-      <h2 class="header">Контакты</h2>
+      <h2 class="title">Контакты</h2>
       <address class="contacts__address">
         <dl class="contacts__list">
           <dt class="contacts__term">e-mail:</dt>
@@ -149,35 +150,35 @@
         </dl>
       </address>
       <!-- ТУТ БУДЕТ iframe карта -->
-      <a class="button button_size_m" href="#">Напишите нам</a>
+      <a class="button button--size_m" href="#">Напишите нам</a>
     </div>
   </section>
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="footer-logo">
-        <img class="footer-logo__image" src="https://via.placeholder.com/102x34" alt="Логотип сайта Мишка" width="102"
-             height="34">
-      </div>
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link">Instagram</a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link">Twitter</a>
-          </li>
-        </ul>
-        <div class="creator">
-          <p class="creator__text">Разработано</p>
-          <img class="creator__image" src="https://via.placeholder.com/27x34" width="27" height="34"
-               alt="Логотип Академии HTML">
-        </div>
-      </div>
-    </div>
-  </footer>
 </main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="footer-logo">
+      <img class="footer-logo__image" src="https://via.placeholder.com/102x34" alt="Логотип сайта Мишка" width="102"
+           height="34">
+    </div>
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter">Twitter</a>
+        </li>
+      </ul>
+    </div>
+    <div class="creator">
+      <p class="creator__text">Разработано</p>
+      <img class="creator__image" src="https://via.placeholder.com/27x34" width="27" height="34"
+           alt="Логотип Академии HTML">
+    </div>
+  </div>
+</footer>
 </body>
 </html>
