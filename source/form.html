@@ -19,7 +19,7 @@
         <a class="site-list__link" href="#">Вязание на заказ</a>
       </li>
       <li class="site-list__item">
-        <a class="site-list__link" href="#">Новые поступления</a>git
+        <a class="site-list__link" href="#">Новые поступления</a>
       </li>
       <li class="site-list__item">
         <a class="site-list__link" href="#">Распродажа</a>
@@ -53,11 +53,12 @@
           <legend class="knitting-form__legend">Тип</legend>
           <ul class="knitting-form__list knitting-type">
             <li class="knitting-type__item"><label class="knitting-type__label">
-              <input class="knitting-type__radio" type="radio" value="accessory" name="knitting-type" checked>Аксессуар для интерьера
+              <input class="knitting-type__radio" type="radio" value="accessory" name="knitting-type" checked>Аксессуар
+              для интерьера
             </label>
-              </li>
+            </li>
             <li class="knitting-type__item"><label class="knitting-type__label">
-              <input class="knitting-type__radio" type="radio" value="toy" name="knitting-type" >Детская игрушка
+              <input class="knitting-type__radio" type="radio" value="toy" name="knitting-type">Детская игрушка
             </label>
             </li>
           </ul>
@@ -67,32 +68,32 @@
           <ul class="knitting-form__list knitting-type">
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox" checked>Белый
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="white" checked>Белый
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox" checked>Серый
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="gray"  checked>Серый
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox">&laquo;Тиффани&raquo;
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="tiffany" >&laquo;Тиффани&raquo;
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox">Черный
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="black" >Черный
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox">Розовый
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="rose" >Розовый
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox">Оранжевый
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="orange" >Оранжевый
               </label>
             </li>
           </ul>
@@ -102,21 +103,40 @@
           <ul class="knitting-form__list knitting-user">
             <li class="knitting-user__item">
               <label class="knitting-user__label">
-                Имя:<input type="text" class="knitting-user__input" placeholder="Введите ваше имя*" required>
+                Имя:<input type="text" class="knitting-user__input" placeholder="Введите ваше имя*" name="user-first-name" required>
               </label>
             </li>
             <li class="knitting-user__item">
               <label class="knitting-user__label">
-                Фамилия:<input type="text" class="knitting-user__input" placeholder="Укажите фамилию*" required>
+                Фамилия:<input type="text" class="knitting-user__input" placeholder="Укажите фамилию*" name="user-last-name" required>
               </label>
-            </li>а
+            </li>
             <li class="knitting-user__item">
               <label class="knitting-user__label">
-                Отчество:<input type="text" class="knitting-user__input" placeholder="Отчество, если желаете">
+                Отчество:<input type="text" class="knitting-user__input" placeholder="Отчество, если желаете" name="very-last-name">
               </label>
             </li>
           </ul>
         </fieldset>
+        <fieldset class="knitting-form__group">
+          <ul class="knitting-form__list knitting-contacts">
+            <li class="knitting-contacts__item">
+              <label class="knitting-form__label">Тел
+                <input type="number" class="knitting-contacts__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required>
+              </label>
+            </li>
+            <li class="knitting-contacts__item">
+              <label class="knitting-form__label">E-mail
+                <input type="email" class="knitting-contacts__input" placeholder="Ваш Email*" name="email" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <label>Доп
+          <textarea name="text"  cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </label>
+        <button class="button" type="submit">Отправить заказ</button>
+        <span class="knitting__form-prompt">*Поля обязательны для заполнения</span>
       </form>
     </div>
   </section>
