@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Форма заказа | Милые штуки ручной работы</title>
+</head>
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img src="https://via.placeholder.com/113x46" width="113" height="46" alt="Милые штуки ручной работы">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Каталог товаров</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Вязание на заказ</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Новые поступления</a>git
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Распродажа</a>
+      </li>
+    </ul>
+    <ul class="main-nav__list user-list">
+      <li class="user-list__item">
+        <form class="user-list__search" method="get" action="https://echo.htmlacademy.ru">
+          <label class="user-list__search-label">
+            <input class="user-list__search-input" type="search" placeholder="Поиск по сайту">
+          </label>
+        </form>
+      </li>
+      <li class="user-list__item">
+        <a class="user-list__link" href="#">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </nav>
+  <span class="page-header__legend">Бесплатная доставка по России</span>
+</header>
+<main class="page-main">
+  <div class="page-main__inner">
+    <h1 class="main-text">Вязание на заказ</h1>
+  </div>
+  <section class="knitting-order">
+    <div class="knitting-order__wrapper">
+      <p class="knitting-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br>
+        форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="knitting-form" method="get" action="http://echo.htmlacademy.ru">
+        <fieldset class="knitting-form__group">
+          <legend class="knitting-form__legend">Тип</legend>
+          <ul class="knitting-form__list knitting-type">
+            <li class="knitting-type__item"><label class="knitting-type__label">
+              <input class="knitting-type__radio" type="radio" value="accessory" name="knitting-type" checked>Аксессуар для интерьера
+            </label>
+              </li>
+            <li class="knitting-type__item"><label class="knitting-type__label">
+              <input class="knitting-type__radio" type="radio" value="toy" name="knitting-type" >Детская игрушка
+            </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="knitting-form__group">
+          <legend class="knitting-form__legend">Цвет</legend>
+          <ul class="knitting-form__list knitting-type">
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox" checked>Белый
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox" checked>Серый
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox">&laquo;Тиффани&raquo;
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox">Черный
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox">Розовый
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox">Оранжевый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="knitting-form__group">
+          <legend class="knitting-form__legend">ФИО</legend>
+          <ul class="knitting-form__list knitting-user">
+            <li class="knitting-user__item">
+              <label class="knitting-user__label">
+                Имя:<input type="text" class="knitting-user__input" placeholder="Введите ваше имя*" required>
+              </label>
+            </li>
+            <li class="knitting-user__item">
+              <label class="knitting-user__label">
+                Фамилия:<input type="text" class="knitting-user__input" placeholder="Укажите фамилию*" required>
+              </label>
+            </li>а
+            <li class="knitting-user__item">
+              <label class="knitting-user__label">
+                Отчество:<input type="text" class="knitting-user__input" placeholder="Отчество, если желаете">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+  </section>
+</main>
+</body>
+</html>
