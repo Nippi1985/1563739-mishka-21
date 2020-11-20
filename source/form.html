@@ -41,17 +41,17 @@
   <span class="page-header__legend">Бесплатная доставка по России</span>
 </header>
 <main class="page-main">
-  <div class="page-main__inner">
-    <h1 class="main-text">Вязание на заказ</h1>
-  </div>
-  <section class="knitting-order">
-    <div class="knitting-order__wrapper">
-      <p class="knitting-order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br>
+  <section class="intro">
+    <h1 class="intro__title">Вязание на заказ</h1>
+  </section>
+  <section class="order">
+    <div class="order__wrapper">
+      <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br>
         форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="knitting-form" method="get" action="http://echo.htmlacademy.ru">
-        <fieldset class="knitting-form__group">
-          <legend class="knitting-form__legend">Тип</legend>
-          <ul class="knitting-form__list knitting-type">
+      <form class="order-form" method="post" action="http://echo.htmlacademy.ru">
+        <fieldset class="order-form__group">
+          <legend class="order-form__legend">Тип</legend>
+          <ul class="order-form__list knitting-type">
             <li class="knitting-type__item"><label class="knitting-type__label">
               <input class="knitting-type__radio" type="radio" value="accessory" name="knitting-type" checked>Аксессуар
               для интерьера
@@ -63,9 +63,9 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="knitting-form__group">
-          <legend class="knitting-form__legend">Цвет</legend>
-          <ul class="knitting-form__list knitting-type">
+        <fieldset class="order-form__group">
+          <legend class="order-form__legend">Цвет</legend>
+          <ul class="order-form__list knitting-type">
             <li class="knitting-type__item">
               <label class="knitting-type__label">
                 <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="white" checked>Белый
@@ -73,70 +73,74 @@
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="gray"  checked>Серый
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="gray" checked>Серый
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="tiffany" >&laquo;Тиффани&raquo;
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="tiffany">&laquo;Тиффани&raquo;
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="black" >Черный
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="black">Черный
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="rose" >Розовый
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="rose">Розовый
               </label>
             </li>
             <li class="knitting-type__item">
               <label class="knitting-type__label">
-                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="orange" >Оранжевый
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="orange">Оранжевый
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="knitting-form__group">
-          <legend class="knitting-form__legend">ФИО</legend>
-          <ul class="knitting-form__list knitting-user">
-            <li class="knitting-user__item">
-              <label class="knitting-user__label">
-                Имя:<input type="text" class="knitting-user__input" placeholder="Введите ваше имя*" name="user-first-name" required>
+        <fieldset class="order-form__group">
+          <legend class="order-form__legend">ФИО</legend>
+          <ul class="order-form__list order-user">
+            <li class="order-user__item">
+              <label class="order-user__label">
+                Имя:<input type="text" class="order-user__input" placeholder="Введите ваше имя*" name="user-first-name"
+                           required>
               </label>
             </li>
-            <li class="knitting-user__item">
-              <label class="knitting-user__label">
-                Фамилия:<input type="text" class="knitting-user__input" placeholder="Укажите фамилию*" name="user-last-name" required>
+            <li class="order-user__item">
+              <label class="order-user__label">
+                Фамилия:<input type="text" class="order-user__input" placeholder="Укажите фамилию*"
+                               name="user-last-name" required>
               </label>
             </li>
-            <li class="knitting-user__item">
-              <label class="knitting-user__label">
-                Отчество:<input type="text" class="knitting-user__input" placeholder="Отчество, если желаете" name="very-last-name">
+            <li class="order-user__item">
+              <label class="order-user__label">
+                Отчество:<input type="text" class="order-user__input" placeholder="Отчество, если желаете"
+                                name="very-last-name">
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="knitting-form__group">
-          <ul class="knitting-form__list knitting-contacts">
-            <li class="knitting-contacts__item">
-              <label class="knitting-form__label">Тел
-                <input type="number" class="knitting-contacts__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required>
+        <fieldset class="order-form__group">
+          <ul class="order-form__list order-contacts">
+            <li class="order-contacts__item">
+              <label class="order-contacts__label">Тел
+                <input type="number" class="order-contacts__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone"
+                       required>
               </label>
             </li>
-            <li class="knitting-contacts__item">
-              <label class="knitting-form__label">E-mail
-                <input type="email" class="knitting-contacts__input" placeholder="Ваш Email*" name="email" required>
+            <li class="order-contacts__item">
+              <label class="order-contacts__label">E-mail
+                <input type="email" class="order-contacts__input" placeholder="Ваш Email*" name="email" required>
               </label>
             </li>
           </ul>
         </fieldset>
         <label>Доп
-          <textarea name="text"  cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <textarea name="text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
         <button class="button" type="submit">Отправить заказ</button>
-        <span class="knitting__form-prompt">*Поля обязательны для заполнения</span>
+        <span class="order-form__prompt">*Поля обязательны для заполнения</span>
       </form>
     </div>
   </section>
@@ -160,10 +164,12 @@
         </li>
       </ul>
     </div>
-    <div class="creator">
-      <p class="creator__text">Разработано</p>
-      <img class="creator__image" src="https://via.placeholder.com/27x34" width="27" height="34"
-           alt="Логотип Академии HTML">
+    <div class="page-footer__developer site-developer">
+      <p class="site-developer__text">Разработано</p>
+      <a class="site-developer__link" href="#">
+        <img class="site-developer__image" src="https://via.placeholder.com/27x34" width="27" height="34"
+             alt="Логотип Академии HTML">
+      </a>
     </div>
   </div>
 </footer>
