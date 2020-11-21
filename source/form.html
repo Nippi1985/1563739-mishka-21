@@ -1,10 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta charset="utf-8">
+  <title>Форма заказа | Милые штуки ручной работы</title>
 </head>
-<body>
-$END$
+<body class="page__body">
+<header class="page-header">
+  <a class="page-header__logo">
+    <img src="https://via.placeholder.com/113x46" width="113" height="46" alt="Милые штуки ручной работы">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button"><span>Открыть меню</span></button>
+    <ul class="main-nav__list site-list">
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Каталог товаров</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Вязание на заказ</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Новые поступления</a>
+      </li>
+      <li class="site-list__item">
+        <a class="site-list__link" href="#">Распродажа</a>
+      </li>
+    </ul>
+    <ul class="main-nav__list user-list">
+      <li class="user-list__item">
+        <form class="user-list__search" method="get" action="https://echo.htmlacademy.ru">
+          <label class="user-list__search-label">
+            <input class="user-list__search-input" type="search" placeholder="Поиск по сайту">
+          </label>
+        </form>
+      </li>
+      <li class="user-list__item">
+        <a class="user-list__link" href="#">Корзина: пока пуста</a>
+      </li>
+    </ul>
+  </nav>
+  <span class="page-header__legend">Бесплатная доставка по России</span>
+</header>
+<main class="page-main">
+  <section class="intro">
+    <h1 class="intro__title">Вязание на заказ</h1>
+  </section>
+  <section class="order">
+    <div class="order__wrapper">
+      <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br>
+        форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order-form" method="post" action="http://echo.htmlacademy.ru">
+        <fieldset class="order-form__group">
+          <legend class="order-form__legend">Тип</legend>
+          <ul class="order-form__list knitting-type">
+            <li class="knitting-type__item"><label class="knitting-type__label">
+              <input class="knitting-type__radio" type="radio" value="accessory" name="knitting-type" checked>Аксессуар
+              для интерьера
+            </label>
+            </li>
+            <li class="knitting-type__item"><label class="knitting-type__label">
+              <input class="knitting-type__radio" type="radio" value="toy" name="knitting-type">Детская игрушка
+            </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__legend">Цвет</legend>
+          <ul class="order-form__list knitting-type">
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="white" checked>Белый
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="gray" checked>Серый
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="tiffany">&laquo;Тиффани&raquo;
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="black">Черный
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="rose">Розовый
+              </label>
+            </li>
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
+                <input type="checkbox" class="knitting-type__checkbox" name="knitting-color" value="orange">Оранжевый
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <legend class="order-form__legend">ФИО</legend>
+          <ul class="order-form__list order-user">
+            <li class="order-user__item">
+              <label class="order-user__label">
+                Имя:<input type="text" class="order-user__input" placeholder="Введите ваше имя*" name="user-first-name"
+                           required>
+              </label>
+            </li>
+            <li class="order-user__item">
+              <label class="order-user__label">
+                Фамилия:<input type="text" class="order-user__input" placeholder="Укажите фамилию*"
+                               name="user-last-name" required>
+              </label>
+            </li>
+            <li class="order-user__item">
+              <label class="order-user__label">
+                Отчество:<input type="text" class="order-user__input" placeholder="Отчество, если желаете"
+                                name="very-last-name">
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__group">
+          <ul class="order-form__list order-contacts">
+            <li class="order-contacts__item">
+              <label class="order-contacts__label">Тел
+                <input type="number" class="order-contacts__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone"
+                       required>
+              </label>
+            </li>
+            <li class="order-contacts__item">
+              <label class="order-contacts__label">E-mail
+                <input type="email" class="order-contacts__input" placeholder="Ваш Email*" name="email" required>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <label>Доп
+          <textarea name="text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        </label>
+        <button class="button" type="submit">Отправить заказ</button>
+        <span class="order-form__prompt">*Поля обязательны для заполнения</span>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="footer-logo">
+      <img class="footer-logo__image" src="https://via.placeholder.com/102x34" alt="Логотип сайта Мишка" width="102"
+           height="34">
+    </div>
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--instagram">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter">Twitter</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__developer site-developer">
+      <p class="site-developer__text">Разработано</p>
+      <a class="site-developer__link" href="#">
+        <img class="site-developer__image" src="https://via.placeholder.com/27x34" width="27" height="34"
+             alt="Логотип Академии HTML">
+      </a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
