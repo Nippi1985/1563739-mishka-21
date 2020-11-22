@@ -1,3 +1,30 @@
-body {
-  background: blue;
-}
+//* GLOBAL *//
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "global/visually-hidden.scss";
+//* BLOCKS *//
+@import "blocks/about.scss";
+@import "blocks/about-item.scss";
+@import "blocks/button.scss";
+@import "blocks/category.scss";
+@import "blocks/change-quote.scss";
+@import "blocks/contacts.scss";
+@import "blocks/feedback.scss";
+@import "blocks/feedback-slider.scss";
+@import "blocks/footer-logo.scss";
+@import "blocks/hero.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page.scss";
+@import "blocks/page-body.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/product-details.scss";
+@import "blocks/promo.scss";
+@import "blocks/search.scss";
+@import "blocks/site-developer.scss";
+@import "blocks/site-list.scss";
+@import "blocks/social.scss";
+@import "blocks/title.scss";
+@import "blocks/user-list.scss";
