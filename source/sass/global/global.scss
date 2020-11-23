@@ -9,10 +9,11 @@ img {
 }
 
 .title {
-  color: $basic-black;
-  font-size: 25px;
-  line-height: 30px;
-  font-weight: 700;
+  @include text($basic-black, 25px, 30px, 700);
+
+  &--small {
+    font-size: 18px;
+  }
 }
 
 .button { //TODO: В глобал, или в блок button.scss? //
