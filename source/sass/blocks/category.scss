@@ -1,0 +1,16 @@
+.category__list {
+  list-style-type: none;
+}
+
+.category__link {
+  background-color: $cyan;
+  color: $basic-white;
+  font-family: $font-sans;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+
+  &--darken-color {
+    background-color: $darken-cyan;
+  }
+}
