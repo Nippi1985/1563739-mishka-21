@@ -1,7 +1,14 @@
+.hero {
+  background-image: url("source/img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top, center;
+}
+
 .hero__title {
   color: $basic-black;
   font-family: $font-sans;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
+  text-align: center;
 }

@@ -1,0 +1,27 @@
+.promo {
+  background-color: $basic-white;
+}
+
+.promo__week-product {
+  color: $moderate-cyan;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  color: $very-dark-grey;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.promo__price {
+  color: $very-dark-grey;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
