@@ -1,0 +1,17 @@
+.feedback-slider {
+  list-style-type: none;
+}
+
+.feedback-slider__blockquote {
+  @include text($very-dark-grey, 15px, 30px, 400);
+}
+
+.feedback-slider__cite {
+  @include text($basic-black, 17px, 24px, 700);
+  font-style: normal;
+}
+
+.feedback-slider__social {
+  @include text($very-dark-grey, 17px, 30px, 400);
+}
+

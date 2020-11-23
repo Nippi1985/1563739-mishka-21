@@ -16,9 +16,14 @@ img {
 }
 
 .button { //TODO: В глобал, или в блок button.scss? //
+  background-color: $basic-white;
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  border: 2px solid $very-dark-grey;
   text-align: center;
   text-transform: uppercase;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
