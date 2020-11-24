@@ -1,0 +1,26 @@
+@mixin reset-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin text($color, $font-size: 17px, $line-height: 24px, $font-weight: 400) {
+  color: $color;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+}
+
+@mixin reset-text {
+  margin: 0;
+}
+
+@mixin reset-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin reset-heading {
+  margin: 0;
+}

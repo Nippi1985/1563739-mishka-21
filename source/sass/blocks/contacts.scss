@@ -1,0 +1,31 @@
+.contacts__container {
+  width: 260px;
+  padding: 0 30px;
+}
+
+
+.contacts__term {
+  @include text($color-gray-500, 14px, 30px, 400);
+  font-style: normal;
+}
+
+.contacts__email {
+  @include text($color-gray-500, 14px, 30px, 400);
+  font-style: normal;
+  border-bottom: 1px solid $color-cyan-200;
+
+  &:hover,
+  &:focus {
+    color: $color-cyan-200;
+    border-bottom: 1px solid $color-cyan-400;
+  }
+
+  &:active {
+    border-bottom: 1px solid rgba($color-cyan-200, 0.1%);
+  }
+}
+
+.contacts__text {
+  @include text($color-gray-500, 14px, 30px, 400);
+  font-style: normal;
+}
