@@ -4,6 +4,7 @@
 
 .feedback-slider__blockquote {
   @include text($color-gray-500, 15px, 30px, 400);
+  margin: 0;
 }
 
 .feedback-slider__cite {
