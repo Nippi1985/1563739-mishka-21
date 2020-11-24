@@ -19,3 +19,7 @@
   }
 }
 
+.contacts__text {
+  @include text($very-dark-grey, 14px, 30px, 400);
+  font-style: normal;
+}
