@@ -1,7 +1,7 @@
 .user-list {
   list-style-type: none;
 
-  @include nulled;
+  @include reset-list;
 }
 
 .user-list__link {

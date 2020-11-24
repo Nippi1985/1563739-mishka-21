@@ -5,27 +5,27 @@
 
 
 .contacts__term {
-  @include text($very-dark-grey, 14px, 30px, 400);
+  @include text($color-gray-500, 14px, 30px, 400);
   font-style: normal;
 }
 
 .contacts__email {
-  @include text($very-dark-grey, 14px, 30px, 400);
+  @include text($color-gray-500, 14px, 30px, 400);
   font-style: normal;
-  border-bottom: 1px solid $moderate-cyan;
+  border-bottom: 1px solid $color-cyan-200;
 
   &:hover,
   &:focus {
-    color: $moderate-cyan;
-    border-bottom: 1px solid $more-dark-cyan;
+    color: $color-cyan-200;
+    border-bottom: 1px solid $color-cyan-400;
   }
 
   &:active {
-    border-bottom: 1px solid rgba($moderate-cyan, 0.1%);
+    border-bottom: 1px solid rgba($color-cyan-200, 0.1%);
   }
 }
 
 .contacts__text {
-  @include text($very-dark-grey, 14px, 30px, 400);
+  @include text($color-gray-500, 14px, 30px, 400);
   font-style: normal;
 }

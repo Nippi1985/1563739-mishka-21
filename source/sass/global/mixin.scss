@@ -1,4 +1,4 @@
-@mixin nulled {
+@mixin reset-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -11,4 +11,16 @@
   font-weight: $font-weight;
 }
 
-/* TODO: reset-text, reset-list, reset-fieldset + codestyle*/
+@mixin reset-text {
+  margin: 0;
+}
+
+@mixin reset-fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@mixin reset-heading {
+  margin: 0;
+}

@@ -1,7 +1,7 @@
 .site-list {
   list-style-type: none;
 
-  @include nulled;
+  @include reset-list;
 }
 
 .site-list__link {

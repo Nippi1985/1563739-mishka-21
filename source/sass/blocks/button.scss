@@ -8,11 +8,11 @@
   text-align: center;
   text-transform: uppercase;
   background-color: $basic-white;
-  border: 2px solid $very-dark-grey;
+  border: 2px solid $color-gray-500;
 
   &:hover {
     color: $basic-white;
-    background-color: $very-dark-grey;
+    background-color: $color-gray-500;
   }
 
   &:active {

@@ -3,7 +3,7 @@
 }
 
 .feedback-slider__blockquote {
-  @include text($very-dark-grey, 15px, 30px, 400);
+  @include text($color-gray-500, 15px, 30px, 400);
 }
 
 .feedback-slider__cite {
@@ -12,5 +12,5 @@
 }
 
 .feedback-slider__social {
-  @include text($very-dark-grey, 17px, 30px, 400);
+  @include text($color-gray-500, 17px, 30px, 400);
 }
