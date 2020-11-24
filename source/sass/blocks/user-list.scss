@@ -5,12 +5,12 @@
 }
 
 .user-list__link {
-  background-color: $basic-white;
-  color: $basic-black;
-  font-family: $font-sans;
+  font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
+  font-family: $font-sans;
+  color: $basic-black;
+  background-color: $basic-white;
 
   &:hover,
   &:focus {

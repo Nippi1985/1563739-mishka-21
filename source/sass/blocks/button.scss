@@ -1,18 +1,18 @@
 .button {
-  background-color: $basic-white;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 700;
-  border: 2px solid $very-dark-grey;
-  text-align: center;
-  text-transform: uppercase;
   box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 16px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $basic-white;
+  border: 2px solid $very-dark-grey;
 
   &:hover {
-    background-color: $very-dark-grey;
     color: $basic-white;
+    background-color: $very-dark-grey;
   }
 
   &:active {

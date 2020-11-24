@@ -1,9 +1,9 @@
 .page-header__legend {
-  color: $very-dark-grey;
-  font-family: $font-sans;
+  font-weight: 400;
   font-size: 15px;
   line-height: 24px;
-  font-weight: 400;
+  font-family: $font-sans;
+  color: $very-dark-grey;
 }
 
 .page-header__container {

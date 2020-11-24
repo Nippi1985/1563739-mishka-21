@@ -1,14 +1,14 @@
 .hero {
-  height: 300px;
   width: 100%;
+  height: 300px;
   background-color: $very-light-grey;
 }
 
 .hero__title {
-  color: $basic-black;
-  font-family: $font-sans;
+  font-weight: 700;
   font-size: 27px;
   line-height: 30px;
-  font-weight: 700;
+  font-family: $font-sans;
   text-align: center;
+  color: $basic-black;
 }
