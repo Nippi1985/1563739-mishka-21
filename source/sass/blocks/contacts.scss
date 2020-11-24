@@ -15,7 +15,7 @@
   }
 
   &:active {
-    border-bottom: 1px solid lighten($moderate-cyan, 30%);
+    border-bottom: 1px solid rgba($moderate-cyan, 0.1%);
   }
 }
 

@@ -27,4 +27,13 @@ img {
   box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  &:hover {
+    background-color: $very-dark-grey;
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
 }
