@@ -43,17 +43,20 @@
 </header>
 <main class="page-main">
   <section class="intro">
+    <div class="intro_container">
     <h1 class="intro__title">Вязание на заказ</h1>
+    </div>
   </section>
   <section class="order">
-    <div class="order__wrapper">
+    <div class="order__container">
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br>
         форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order-form" method="post" action="http://echo.htmlacademy.ru">
         <fieldset class="order-form__group">
           <legend class="order-form__legend">Тип</legend>
           <ul class="order-form__list knitting-type">
-            <li class="knitting-type__item"><label class="knitting-type__label">
+            <li class="knitting-type__item">
+              <label class="knitting-type__label">
               <input class="knitting-type__radio" type="radio" value="accessory" name="knitting-type" checked>Аксессуар
               для интерьера
             </label>
@@ -104,17 +107,17 @@
           <ul class="order-form__list order-user">
             <li class="order-user__item">
               <label class="order-user__label">
-                Имя:<input type="text" class="order-user__input" placeholder="Введите ваше имя*" name="user-first-name" required>
+                Имя:<input class="order-user__input" type="text" placeholder="Введите ваше имя*" name="user-first-name" required>
               </label>
             </li>
             <li class="order-user__item">
               <label class="order-user__label">
-                Фамилия:<input type="text" class="order-user__input" placeholder="Укажите фамилию*" name="user-last-name" required>
+                Фамилия:<input class="order-user__input" type="text" placeholder="Укажите фамилию*" name="user-last-name" required>
               </label>
             </li>
             <li class="order-user__item">
               <label class="order-user__label">
-                Отчество:<input type="text" class="order-user__input" placeholder="Отчество, если желаете"
+                Отчество:<input class="order-user__input" type="text" placeholder="Отчество, если желаете"
                                 name="very-last-name">
               </label>
             </li>
@@ -144,7 +147,7 @@
   </section>
 </main>
 <footer class="page-footer">
-  <div class="page-footer__wrapper">
+  <div class="page-footer__container">
     <div class="footer-logo">
       <img class="footer-logo__image" src="https://via.placeholder.com/102x34" width="102" height="34" alt="Логотип сайта Мишка">
     </div>

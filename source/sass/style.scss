@@ -5,6 +5,12 @@
 @import "global/global.scss";
 @import "global/visually-hidden.scss";
 //* BLOCKS *//
+//* FORM PAGE *//
+@import "blocks/order.scss";
+@import "blocks/intro.scss";
+@import "blocks/knitting-type.scss";
+@import "blocks/order-user.scss";
+//* MAIN PAGE *//
 @import "blocks/about.scss";
 @import "blocks/advantages";
 @import "blocks/button.scss";
