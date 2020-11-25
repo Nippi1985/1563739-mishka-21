@@ -1,0 +1,33 @@
+.order-form__group {
+  @include reset-fieldset;
+  border-top: 1px solid $color-cyan-200;
+}
+
+.order-form__legend {
+  @include text($font-sans, 17px, 16px, 700);
+  text-transform: uppercase;
+  color: $color-cyan-200;
+}
+
+.order-form__list {
+  @include reset-list;
+}
+
+.order-form__label {
+  @include text($font-sans, 17px, 16px, 700);
+  text-transform: uppercase;
+  color: $color-cyan-200;
+}
+
+.order-form__textarea {
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: rgba($basic-black, 0.3%);
+  }
+}
+
+.order-form__prompt {
+  @include text($font-sans, 14px, 16px, 400);
+}

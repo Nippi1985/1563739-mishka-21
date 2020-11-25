@@ -1,0 +1,13 @@
+.order {
+  background-color: $basic-white;
+}
+
+.order__container {
+  width: 260px;
+  padding: 0 30px;
+}
+
+.order__text {
+  @include reset-text;
+  @include text($font-sans, 13px, 24px, 400);
+}

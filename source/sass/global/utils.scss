@@ -1,0 +1,7 @@
+.title {
+  @include text($basic-black, 25px, 30px, 700);
+
+  &--small {
+    font-size: 18px;
+  }
+}
