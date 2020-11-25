@@ -1,0 +1,16 @@
+.video__container {
+  width: 260px;
+  margin: 0 30px;
+}
+
+.video__title {
+  @include reset-heading;
+  @include text($font-sans, 17px, 24px, 700);
+  color: $basic-black;
+}
+
+.video__text {
+  @include reset-text;
+  @include text($font-sans, 13px, 24px, 400);
+  color: $color-gray-500;
+}
