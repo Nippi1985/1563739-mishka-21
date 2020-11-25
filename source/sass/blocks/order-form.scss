@@ -27,3 +27,7 @@
     color: rgba($basic-black, 0.3%);
   }
 }
+
+.order-form__prompt {
+  @include text($font-sans, 14px, 16px, 400);
+}
