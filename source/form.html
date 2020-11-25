@@ -7,7 +7,7 @@
 </head>
 <body class="page-body">
 <header class="page-header">
-  <a class="page-header__logo">
+  <a class="page-header__logo" href="index.html">
     <img src="https://via.placeholder.com/113x46" width="113" height="46" alt="Милые штуки ручной работы">
   </a>
   <nav class="main-nav">
@@ -127,18 +127,18 @@
           <ul class="order-form__list order-contacts">
             <li class="order-contacts__item">
               <label class="order-contacts__label">Тел
-                <input type="number" class="order-contacts__input" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required>
+                <input class="order-contacts__input order-contacts__input--icon-phone" type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required>
               </label>
             </li>
             <li class="order-contacts__item">
               <label class="order-contacts__label">E-mail
-                <input type="email" class="order-contacts__input" placeholder="Ваш Email*" name="email" required>
+                <input class="order-contacts__input order-contacts__input--icon-mail" type="email"  placeholder="Ваш Email*" name="email" required>
               </label>
             </li>
           </ul>
         </fieldset>
-        <label>Доп
-          <textarea name="text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <label class="order-form__label">Доп<!--TODO: вопросы по названию класса и необходимости обертки -->
+          <textarea class="order-form__textarea" name="text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         </label>
         <button class="button" type="submit">Отправить заказ</button>
         <span class="order-form__prompt">*Поля обязательны для заполнения</span>

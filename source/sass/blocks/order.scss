@@ -11,18 +11,3 @@
   @include reset-text;
   @include text($font-sans, 13px, 24px, 400);
 }
-
-.order-form__group {
-  @include reset-fieldset;
-  border-top: 1px solid $color-cyan-200;
-}
-
-.order-form__legend {
-  @include text($font-sans, 17px, 16px, 700);
-  text-transform: uppercase;
-  color: $color-cyan-200;
-}
-
-.order-form__list {
-  @include reset-list;
-}

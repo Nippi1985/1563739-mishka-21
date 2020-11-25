@@ -1,19 +1,21 @@
+//* BLOCKS *//
 //* GLOBAL *//
 @import "global/mixin.scss";
 @import "global/variables.scss";
 @import "global/fonts.scss";
 @import "global/global.scss";
 @import "global/visually-hidden.scss";
-//* BLOCKS *//
+@import "global/button";
 //* FORM PAGE *//
+@import "blocks/order-form.scss";
 @import "blocks/order.scss";
 @import "blocks/intro.scss";
 @import "blocks/knitting-type.scss";
 @import "blocks/order-user.scss";
+@import "blocks/order-contacts";
 //* MAIN PAGE *//
 @import "blocks/about.scss";
 @import "blocks/advantages";
-@import "blocks/button.scss";
 @import "blocks/category.scss";
 @import "blocks/change-quote.scss";
 @import "blocks/contacts.scss";
