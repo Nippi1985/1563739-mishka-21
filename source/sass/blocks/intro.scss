@@ -9,7 +9,7 @@
 
 .intro__title {
   @include reset-heading;
-  @include text($font-sans, 27px, 30px, 700);
+  @include text($basic-black, 27px, 30px, 700);
   text-align: center;
   color: $basic-black;
 }
