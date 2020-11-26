@@ -1,6 +1,14 @@
 .video__container {
   width: 260px;
   margin: 0 30px;
+
+  &:hover .video__background {
+    box-shadow: 0 6px 10px rgba($basic-black, 0.1%);
+  }
+
+  &:active .video__background {
+    box-shadow: 0 3px 5px rgba($basic-black, 0.1%);
+  }
 }
 
 .video__title {
