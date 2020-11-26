@@ -1,12 +1,32 @@
-.page-header__legend {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  font-family: $font-sans;
-  color: $color-gray-500;
+.page-header {
+  position: relative;
+  width: 100%;
+  min-height: 79px;
+  color: $basic-white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 1px 0 $color-gray-100, inset 0 1px 0 $color-gray-100;
 }
 
 .page-header__container {
-  width: 260px;
-  padding: 0 30px;
+  min-height: 79px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-header__legend {
+  @media (max-width: $only-mobile) {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $font-sans;
+    color: $color-gray-500;
+  }
 }
