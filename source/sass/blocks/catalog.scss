@@ -1,0 +1,12 @@
+.catalog {
+  background-color: $basic-white;
+}
+
+.catalog__container {
+  width: 260px;
+  padding: 0 30px;
+}
+
+.catalog__list {
+  @include reset-list;
+}

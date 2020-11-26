@@ -1,0 +1,37 @@
+.product {
+  border: 1px solid $color-gray-100;
+  box-sizing: border-box;
+
+  &:hover .product__block {
+    box-shadow: 0 6px 10px rgba($basic-black, 0.1%);
+  }
+
+  &:active .product__block {
+    box-shadow: 0 3px 5px rgba($basic-black, 0.1%);
+  }
+}
+
+.product__title {
+  @include reset-heading;
+  @include text($basic-black, 17px, 24px, 700);
+
+  &:hover,
+  &:focus {
+    color: rgba($basic-black, 0.6%);
+  }
+
+  &:active {
+    color: rgba($basic-black, 0.3%);
+  }
+}
+
+.product__info {
+  @include reset-text;
+  @include text($font-sans, 13px, 30px, 400);
+  color: $color-gray-500;
+}
+
+.product__price {
+  @include reset-text;
+  @include text($basic-black, 15px, 24px, 700);
+}
