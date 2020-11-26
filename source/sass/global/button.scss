@@ -1,10 +1,11 @@
 .button {
+  @include text($color-gray-500, 18px, 20px, 700);
+}
+
+.button-decor {
   box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 16px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
   text-align: center;
   color: $color-gray-500;
   text-transform: uppercase;
