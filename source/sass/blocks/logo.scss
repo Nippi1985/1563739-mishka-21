@@ -1,0 +1,19 @@
+.logo__mobile {
+  display: block;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.logo__tablet {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}

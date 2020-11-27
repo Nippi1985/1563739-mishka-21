@@ -2,7 +2,7 @@
   width: 100%;
   min-height: 300px;
   background-color: $color-gray-200;
-  /*background-image: url("../img/hero-mobile.jpg");*/
+  background-image: url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -23,7 +23,6 @@
   @include reset-heading;
   @include text($basic-black, 27px, 30px, 700);
   text-align: center;
-  /*padding-top: 90px;*/
 
   @media (min-width: $tablet) {
     @include text($basic-black, 43px, 50px, 700);
