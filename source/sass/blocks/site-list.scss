@@ -1,5 +1,5 @@
 .site-list {
-  display: flex;
+  display: flex; /*display: none уберет навигацию + user-list*/
   flex-direction: column;
 }
 

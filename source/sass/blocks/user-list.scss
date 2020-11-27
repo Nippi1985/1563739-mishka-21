@@ -1,3 +1,8 @@
+.user-list {
+  display: flex; /*display: none уберет навигацию + user-list*/
+  flex-direction: column;
+}
+
 .user-list__link {
   display: block;
 
