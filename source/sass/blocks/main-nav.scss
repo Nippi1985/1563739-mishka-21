@@ -2,6 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @media (min-width: $tablet) {
+    display: none;
+
+    @include outline(orange);
+  }
 }
 
 .main-nav__toggle {
@@ -14,10 +20,6 @@
   background-image: url("../../img/menu.svg");
   border: 0;
   cursor: pointer;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
 }
 
 .main-nav__list {

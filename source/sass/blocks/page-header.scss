@@ -10,6 +10,8 @@
     flex-direction: row;
     height: 89px;
     justify-content: flex-end;
+
+    @include outline(blue);
   }
 }
 
@@ -24,6 +26,8 @@
     width: 114px;
     height: 89px;
     margin: 0 50px;
+
+    @include outline(green);
   }
 }
 
