@@ -8,7 +8,9 @@
     justify-content: flex-end;
   }
 
-  @include outline(red);
+  @media (min-width: $desktop) {
+    justify-content: space-between;
+  }
 }
 
 .main-nav__toggle {

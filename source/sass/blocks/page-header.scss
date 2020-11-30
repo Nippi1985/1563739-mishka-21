@@ -26,6 +26,15 @@
     margin-left: 50px;
     margin-right: auto;
   }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 999;
+  }
 }
 
 .page-header__legend {

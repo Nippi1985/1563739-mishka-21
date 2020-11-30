@@ -12,6 +12,16 @@
     flex-wrap: wrap;
     max-width: 370px;
   }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    max-width: 500px;
+    flex-wrap: wrap;
+  }
 }
 
 .site-list__link {
@@ -37,9 +47,42 @@
     padding: 10px 19px 10px 0;
     box-shadow: none;
   }
+
+  @media (min-width: $desktop) {
+    @include text($basic-black, 17px, 24px, 700);
+    background-color: $basic-white;
+    padding: 33px 35px 31px 0;
+
+    /*@include outline(red);*/
+  }
 }
 
-.site-list__link--arrivals,
+.site-list__link--arrivals {
+  display: none;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 90px;
+    background-color: transparent;
+    padding: 20px 18px 20px 0;
+
+    @include text($basic-black, 15px, 24px, 700);
+  }
+}
+
 .site-list__link--sell {
   display: none;
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    display: block;
+    left: 170px;
+    top: 90px;
+    background-color: transparent;
+    padding: 20px 18px 20px 18px;
+
+    @include text($basic-black, 15px, 24px, 700);
+  }
 }
