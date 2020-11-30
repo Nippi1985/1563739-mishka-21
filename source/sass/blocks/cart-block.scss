@@ -1,3 +1,4 @@
+/*
 .cart-block {
   display: none;
 
@@ -8,7 +9,7 @@
 
 .cart-block__link {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   min-width: 314px;
   min-height: 89px;
@@ -25,11 +26,6 @@
 }
 
 .cart-block__svg {
-  padding-right: 31px;
+  padding-left: 31px;
 }
-
-.cart-block__text {
-  @include reset-text;
-  @include text($basic-black, 17px, 24px, 700);
-  padding-right: 50px;
-}
+*/

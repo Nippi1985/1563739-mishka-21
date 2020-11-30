@@ -1,5 +1,11 @@
 .user-list {
+  display: flex; /* меняем через JS на display: flex/none для отображения */
   flex-direction: column;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .user-list__link {
@@ -19,4 +25,95 @@
   &:active {
     color: rgba($basic-black, 0.3);
   }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89px;
+    padding: 0;
+  }
 }
+
+.user-list__link--cart {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-width: 317px;
+  }
+
+  &:hover .user-link__svg--cart path {
+    fill: $color-cyan-200;
+    opacity: 1;
+  }
+
+  &:active .user-link__svg--cart path {
+    fill: $color-cyan-200;
+    opacity: 0.3;
+  }
+}
+
+.user-link__svg--cart {
+  position: absolute;
+  top: 30px;
+  left: 31px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding-left: 31px;
+    padding-right: 30px;
+  }
+}
+
+.user-list__text--cart {
+  @include reset-text;
+  padding-right: 50px;
+}
+
+.user-list__link--search {
+  position: relative;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    box-shadow: 0 0 1px rgba($basic-black, 0.2), inset 0 0 1px rgba($basic-black, 0.2);
+  }
+
+  &:hover .user-list__svg--search path {
+    fill: $color-cyan-200;
+    opacity: 1;
+  }
+
+  &:active .user-list__svg--search path {
+    fill: $color-cyan-200;
+    opacity: 0.3;
+  }
+}
+
+.user-list__svg--search {
+  position: absolute;
+  top: 30px;
+  left: 31px;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}
+
+.user-list__text--search {
+  @include reset-text;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+

@@ -17,3 +17,15 @@
     display: none;
   }
 }
+
+.logo__desktop {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
