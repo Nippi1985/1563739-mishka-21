@@ -3,15 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 79px;
+  min-height: 79px;
   box-shadow: 0 1px 0 $color-gray-100, inset 0 1px 0 $color-gray-100;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     height: 89px;
     justify-content: flex-end;
-
-    @include outline(blue);
   }
 }
 
@@ -27,8 +25,6 @@
     height: 89px;
     margin-left: 50px;
     margin-right: auto;
-
-    @include outline(green);
   }
 }
 
