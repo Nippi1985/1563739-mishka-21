@@ -15,11 +15,11 @@
 
   @media (min-width: $desktop) {
     align-items: center;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
     margin-left: 50px;
-    max-width: 500px;
+    max-width: 470px;
     flex-wrap: wrap;
   }
 }
@@ -52,8 +52,6 @@
     @include text($basic-black, 17px, 24px, 700);
     background-color: $basic-white;
     padding: 33px 35px 31px 0;
-
-    /*@include outline(red);*/
   }
 }
 
@@ -61,12 +59,10 @@
   display: none;
 
   @media (min-width: $desktop) {
-    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: block;
-    left: 0;
-    top: 90px;
     background-color: transparent;
-    padding: 20px 18px 20px 0;
 
     @include text($basic-black, 15px, 24px, 700);
   }
@@ -76,13 +72,17 @@
   display: none;
 
   @media (min-width: $desktop) {
-    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: block;
-    left: 170px;
-    top: 90px;
     background-color: transparent;
-    padding: 20px 18px 20px 18px;
 
     @include text($basic-black, 15px, 24px, 700);
+  }
+}
+
+.site-list__item {
+  @media (min-width: $desktop) {
+    min-width: 235px;
   }
 }
