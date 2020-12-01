@@ -7,10 +7,10 @@
 .product-details__feature {
   min-width: 40%;
 
-  @include text($color-gray-400, 15px, 20px, 400);
+  @include text($color-gray-500, 15px, 20px, 400);
   border-bottom: 1px solid $color-gray-100;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 
 .product-details__value {
@@ -19,6 +19,6 @@
   @include text($color-gray-500, 15px, 20px, 400);
   margin: 0;
   border-bottom: 1px solid $color-gray-100;
-  padding-bottom: 16px;
-  padding-top: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }

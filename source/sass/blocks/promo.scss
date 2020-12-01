@@ -5,27 +5,67 @@
 .promo__container {
   min-width: 260px;
   padding: 0 30px;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: 1fr 334px;
+    grid-template-rows: min-content min-content min-content min-content min-content;
+    column-gap: 48px;
+    padding: 0 50px;
+  }
 }
 
 .promo__week-product {
   @include text($color-cyan-200, 17px, 20px, 700);
   text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    max-width: 130px;
+    text-align: center;
+  }
 }
 
 .promo__text {
   @include reset-text;
-  @include text($color-gray-500, 15px, 24px, 400);
+  @include text($color-gray-500, 15px, 30px, 400);
   padding-top: 17px;
   padding-bottom: 28px;
+
+  @media (min-width: $tablet) {
+    @include text($color-gray-500, 17px, 30px, 400);
+    margin-bottom: 36px;
+    padding: 0;
+  }
 }
 
 .promo__price {
   @include text($color-gray-500, 17px, 24px, 700);
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet) {
+    @include text($color-gray-500, 20px, 24px, 700);
+    margin: 57px auto 33px auto;
+  }
+}
+
+.promo__image-block {
+  @media (min-width: $tablet) {
+    width: 334px;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 .promo__image {
   display: block;
   margin: 28px auto 25px auto;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin: 0;
+  }
 }
+

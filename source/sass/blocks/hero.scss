@@ -27,4 +27,8 @@
   @media (min-width: $tablet) {
     @include text($basic-black, 43px, 50px, 700);
   }
+
+  @media (min-width: $desktop) {
+    @include text($basic-black, 53px, 57px, 700);
+  }
 }
