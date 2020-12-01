@@ -1,7 +1,13 @@
 .title {
+  @include reset-heading;
   @include text($basic-black, 25px, 30px, 700);
 
   &--small {
     font-size: 18px;
+  }
+
+  &--promo {
+    margin-top: 31px;
+    margin-bottom: 4px;
   }
 }
