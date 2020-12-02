@@ -13,6 +13,10 @@
     column-gap: 48px;
     padding: 0 50px;
   }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 525px;
+  }
 }
 
 .promo__week-product {
@@ -22,6 +26,12 @@
   @media (min-width: $tablet) {
     max-width: 130px;
     text-align: center;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -33,7 +43,8 @@
 
   @media (min-width: $tablet) {
     @include text($color-gray-500, 17px, 30px, 400);
-    margin-bottom: 36px;
+    margin-top: -10px;
+    margin-bottom: 26px;
     padding: 0;
   }
 }
@@ -56,6 +67,11 @@
     grid-row-end: 6;
     grid-column-start: 2;
     grid-column-end: 3;
+  }
+
+  @media (min-width: $desktop) {
+    width: 525px;
+    grid-row-start: 1;
   }
 }
 
