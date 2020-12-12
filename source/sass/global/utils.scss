@@ -38,5 +38,21 @@
       @include text($basic-black, 43px, 50px, 700);
       padding-bottom: 28px;
     }
+
+    @media (min-width: $desktop) {
+      @include text($basic-black, 53px, 57px, 700);
+    }
+  }
+
+  &--feedback {
+    @include text($basic-black, 25px, 30px, 700);
+  }
+
+  @media (min-width: $tablet) {
+    @include text($basic-black, 43px, 50px, 700);
+  }
+
+  @media (min-width: $desktop) {
+    @include text($basic-black, 53px, 57px, 700);
   }
 }

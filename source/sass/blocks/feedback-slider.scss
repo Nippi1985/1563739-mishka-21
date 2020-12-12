@@ -1,5 +1,13 @@
 .feedback-slider {
-  list-style-type: none;
+  @include reset-list;
+}
+
+.feedback-slider__item {
+  display: none;
+}
+
+.feedback-slider__current-slide {
+  display: block;
 }
 
 .feedback-slider__blockquote {
@@ -8,10 +16,16 @@
 }
 
 .feedback-slider__cite {
+  display: block;
+  margin-top: 33px;
+
   @include text($basic-black, 17px, 24px, 700);
   font-style: normal;
 }
 
 .feedback-slider__social {
+  display: block;
+
   @include text($color-gray-500, 17px, 30px, 400);
+  margin-bottom: 30px;
 }

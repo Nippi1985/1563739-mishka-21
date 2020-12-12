@@ -1,4 +1,22 @@
 .feedback__container {
-  width: 260px;
+  min-width: 260px;
   padding: 0 30px;
+}
+
+.feedback__buttons {
+  display: flex;
+  margin-bottom: 38px;
+}
+
+.change-quote {
+  background-color: $basic-white;
+  box-sizing: border-box;
+  width: 50%;
+  height: 52px;
+  border: 1px solid $color-gray-100;
+  cursor: pointer;
+
+  &--next svg {
+    transform: rotate(180deg);
+  }
 }
