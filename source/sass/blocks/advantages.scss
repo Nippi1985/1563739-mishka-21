@@ -7,14 +7,13 @@
 .advantages__item {
   display: flex;
   align-items: flex-end;
-  min-height: 91px;
-  margin-top: 28px;
 }
 
 .advantages__text {
   @include reset-text;
   @include text($basic-black, 17px, 20px, 700);
   position: relative;
+  margin-top: 83px;
 
   &--icon-flower::before {
     content: "";
@@ -24,7 +23,7 @@
     background-image: url("../img/flower.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    top: -60px;
+    top: -53px;
     left: 0;
   }
 
@@ -36,7 +35,7 @@
     background-image: url("../img/bill.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    bottom: 60px;
+    top: -53px;
     left: 0;
   }
 
@@ -48,7 +47,7 @@
     background-image: url("../img/heart.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    bottom: 60px;
+    top: -53px;
     left: 0;
   }
 
@@ -60,7 +59,7 @@
     background-image: url("../img/clew.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    bottom: 60px;
+    top: -53px;
     left: 0;
   }
 
@@ -72,7 +71,7 @@
     background-image: url("../img/rocket.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    bottom: 60px;
+    top: -53px;
     left: 0;
   }
 
@@ -84,7 +83,7 @@
     background-image: url("../img/gift.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
-    bottom: 60px;
+    top: -53px;
     left: 0;
   }
 }
