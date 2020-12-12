@@ -1,10 +1,90 @@
 .advantages {
   list-style-type: none;
+
+  @include reset-list;
+}
+
+.advantages__item {
+  display: flex;
+  align-items: flex-end;
+  min-height: 91px;
+  margin-top: 28px;
 }
 
 .advantages__text {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  color: $basic-black;
+  @include reset-text;
+  @include text($basic-black, 17px, 20px, 700);
+  position: relative;
+
+  &--icon-flower::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 38px;
+    background-image: url("../img/flower.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    top: -60px;
+    left: 0;
+  }
+
+  &--icon-bill::before {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 27px;
+    background-image: url("../img/bill.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    bottom: 60px;
+    left: 0;
+  }
+
+  &--icon-heart::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 27px;
+    background-image: url("../img/heart.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    bottom: 60px;
+    left: 0;
+  }
+
+  &--icon-clew::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 34px;
+    background-image: url("../img/clew.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    bottom: 60px;
+    left: 0;
+  }
+
+  &--icon-rocket::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 23px;
+    background-image: url("../img/rocket.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    bottom: 60px;
+    left: 0;
+  }
+
+  &--icon-giftbox::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 32px;
+    background-image: url("../img/gift.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    bottom: 60px;
+    left: 0;
+  }
 }

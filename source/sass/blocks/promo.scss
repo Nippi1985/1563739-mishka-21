@@ -12,12 +12,13 @@
     grid-template-rows: min-content min-content min-content;
     column-gap: 48px;
     padding: 0 50px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 525px;
     margin-top: 54px;
-    margin-left: 225px;
+    margin-left: 180px;
   }
 }
 
@@ -46,7 +47,7 @@
   @media (min-width: $tablet) {
     @include text($color-gray-500, 17px, 30px, 400);
     margin-top: -10px;
-    margin-bottom: 26px;
+    margin-bottom: 35px;
     padding: 0;
   }
 }
@@ -69,40 +70,38 @@
   }
 
   @media (min-width: $desktop) {
-    margin-top: auto;
+    margin-top: 109px;
+  }
+}
+
+.promo__image-wrapper {
+  @media (min-width: $tablet) {
+    width: 334px;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
-  .promo__image-wrapper {
-    @media (min-width: $tablet) {
-      width: 334px;
-      grid-row-start: 2;
-      grid-row-end: 4;
-      grid-column-start: 2;
-      grid-column-end: 3;
-    }
+  @media (min-width: $desktop) {
+    width: 525px;
+    height: 636px;
+    grid-row-start: 1;
+    position: relative;
+    object-fit: contain;
+  }
+}
 
-    @media (min-width: $desktop) {
-      width: 525px;
-      grid-row-start: 1;
-    }
+.promo__image {
+  display: block;
+  margin: 28px auto 25px auto;
 
-    @media (min-width: $desktop) {
-      position: relative;
-    }
+  @media (min-width: $tablet) {
+    width: 100%;
+    margin: 0;
   }
 
-  .promo__image {
-    display: block;
-    margin: 28px auto 25px auto;
-
-    @media (min-width: $tablet) {
-      object-fit: contain;
-      width: 100%;
-      margin: 0;
-    }
-
-    @media (min-width: $desktop) {
-      position: absolute;
-    }
+  @media (min-width: $desktop) {
+    position: absolute;
   }
 }
