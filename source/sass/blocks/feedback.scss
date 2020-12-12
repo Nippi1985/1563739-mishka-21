@@ -15,8 +15,18 @@
   height: 52px;
   border: 1px solid $color-gray-100;
   cursor: pointer;
+  outline: none;
 
   &--next svg {
     transform: rotate(180deg);
   }
+
+  &:hover .change-quote__svg {
+    opacity: 0.6;
+  }
+
+  &:active .change-quote__svg {
+    opacity: 0.3;
+  }
 }
+
