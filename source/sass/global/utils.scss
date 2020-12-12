@@ -23,8 +23,13 @@
     }
 
     @media (min-width: $desktop) {
-      grid-column-end: 2;
+      @include text($basic-black, 53px, 57px, 700);
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-end: 3;
       position: relative;
+      margin-top: 0;
+      z-index: 999;
     }
   }
 }
