@@ -33,5 +33,11 @@
   &--feedback {
     min-width: 260px;
     margin-bottom: 45px;
+
+    @media (min-width: $tablet) {
+      order: 1;
+      min-height: 52px;
+      min-width: 175px;
+    }
   }
 }

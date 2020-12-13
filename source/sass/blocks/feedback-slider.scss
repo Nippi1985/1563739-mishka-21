@@ -1,5 +1,12 @@
 .feedback-slider {
   @include reset-list;
+
+  @media (min-width: $tablet) {
+    order: 2;
+    width: 100%;
+
+    @include outline(red);
+  }
 }
 
 .feedback-slider__item {
@@ -13,6 +20,17 @@
 .feedback-slider__blockquote {
   @include text($color-gray-500, 15px, 30px, 400);
   margin: 0;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
+.feedback-slider__author {
+  @media (min-width: $tablet) {
+    order: 3;
+    width: 50%;
+  }
 }
 
 .feedback-slider__cite {
@@ -21,6 +39,10 @@
 
   @include text($basic-black, 17px, 24px, 700);
   font-style: normal;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
 .feedback-slider__social {
