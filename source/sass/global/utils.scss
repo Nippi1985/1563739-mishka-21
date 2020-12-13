@@ -12,6 +12,7 @@
 
     @media (min-width: $desktop) {
       @include text($basic-black, 53px, 57px, 700);
+      margin-bottom: 34px;
     }
   }
 
