@@ -2,8 +2,17 @@
   @include reset-heading;
   @include text($basic-black, 25px, 30px, 700);
 
-  &--small {
+  &--contacts {
     font-size: 18px;
+    margin-bottom: 13px;
+
+    @media (min-width: $tablet) {
+      @include text($basic-black, 43px, 50px, 700);
+    }
+
+    @media (min-width: $desktop) {
+      @include text($basic-black, 53px, 57px, 700);
+    }
   }
 
   &--promo {
@@ -46,16 +55,17 @@
 
   &--feedback {
     @include text($basic-black, 25px, 30px, 700);
-  }
+    margin-bottom: 14px;
 
-  @media (min-width: $tablet) {
-    order: 0;
+    @media (min-width: $tablet) {
+      order: 0;
 
-    @include text($basic-black, 43px, 50px, 700);
-    width: 70%;
-  }
+      @include text($basic-black, 43px, 50px, 700);
+      width: 70%;
+    }
 
-  @media (min-width: $desktop) {
-    @include text($basic-black, 53px, 57px, 700);
+    @media (min-width: $desktop) {
+      @include text($basic-black, 53px, 57px, 700);
+    }
   }
 }

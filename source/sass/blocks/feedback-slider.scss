@@ -11,10 +11,10 @@
 
 .feedback-slider__item {
   display: none;
-}
 
-.feedback-slider__current-slide {
-  display: block;
+  &--current-slide {
+    display: block;
+  }
 }
 
 .feedback-slider__blockquote {

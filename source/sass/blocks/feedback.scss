@@ -8,13 +8,20 @@
     flex-wrap: wrap;
     margin: 0 50px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 230px;
+  }
 }
 
 .feedback__buttons {
   display: flex;
-  order: 4;
-  width: 50%;
   margin-bottom: 38px;
+
+  @media (min-width: $tablet) {
+    order: 4;
+    width: 50%;
+  }
 }
 
 .change-quote {

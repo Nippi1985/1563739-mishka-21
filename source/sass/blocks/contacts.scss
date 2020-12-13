@@ -1,12 +1,10 @@
 .contacts__container {
-  width: 260px;
+  min-width: 260px;
   padding: 0 30px;
-}
 
-
-.contacts__term {
-  @include text($color-gray-500, 14px, 30px, 400);
-  font-style: normal;
+  @media (min-width: $tablet) {
+    padding: 0 50px;
+  }
 }
 
 .contacts__email {
@@ -23,9 +21,62 @@
   &:active {
     border-bottom: 1px solid rgba($color-cyan-200, 0.1%);
   }
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
 }
 
 .contacts__text {
+  @include reset-text;
   @include text($color-gray-500, 14px, 30px, 400);
   font-style: normal;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
+.contacts__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    flex-wrap: nowrap;
+  }
+}
+
+.contacts__term {
+  @include text($color-gray-500, 14px, 30px, 400);
+  font-style: normal;
+  min-width: 30%;
+  margin-top: 15px;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    min-width: 90px;
+  }
+}
+
+.contacts__definition {
+  margin: 0;
+  width: 70%;
+  margin-top: 15px;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    margin-right: 30px;
+  }
+}
+
+.contacts__map {
+  margin-top: 62px;
+  width: 100%;
+  margin-bottom: 42px;
+}
+
+.contacts__iframe {
+  border: none;
 }

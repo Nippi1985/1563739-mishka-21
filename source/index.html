@@ -257,7 +257,7 @@
     <div class="feedback__container">
       <h2 class="title title--feedback">Отзывы</h2>
       <ul class="feedback__list feedback-slider">
-        <li class="feedback-slider__item feedback-slider__current-slide">
+        <li class="feedback-slider__item feedback-slider__item--current-slide">
           <blockquote class="feedback-slider__blockquote">Я молодая мама, но всё равно фотографии не набирали
             и близко такого количества лайков, как у популярных инстамамочек.
             В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -311,7 +311,7 @@
 
   <section class="contacts">
     <div class="contacts__container">
-      <h2 class="title title--small">Контакты</h2>
+      <h2 class="title title--contacts">Контакты</h2>
       <address class="contacts__address">
         <dl class="contacts__list">
           <dt class="contacts__term">e-mail:</dt>
@@ -320,14 +320,16 @@
           </dd>
           <dt class="contacts__term">адрес:</dt>
           <dd class="contacts__definition">
-            <p class="contacts__text">г. Санкт-Петербург
+            <p class="contacts__text">г. Санкт-Петербург<br>
               ул. Большая Конюшенная
               д. 19/8, офис 101</p>
         </dl>
       </address>
-      <!-- ТУТ БУДЕТ iframe карта -->
-      <a class="button button--size-m" href="#">Напишите нам</a>
     </div>
+    <div class="contacts__map">
+    <iframe class="contacts__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d594.1896420700535!2d30.322871536880978!3d59.93865056488585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1607868561760!5m2!1sru!2sby" width="100%" height="450" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+    <a class="button button--decor button--contacts" href="#">Напишите нам</a>
   </section>
 </main>
 
