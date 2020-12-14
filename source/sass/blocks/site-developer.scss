@@ -8,3 +8,13 @@
   margin-right: 27px;
   padding-bottom: 7px;
 }
+
+.site-developer__link {
+  &:hover .site-developer__svg path {
+    fill: $color-cyan-400;
+  }
+
+  &:active .site-developer__svg path {
+    fill: rgba($color-cyan-400, 0.3);
+  }
+}
