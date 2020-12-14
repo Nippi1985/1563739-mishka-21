@@ -3,8 +3,16 @@
 }
 
 .intro_container {
-  width: 260px;
-  padding: 0 30px;
+  min-width: 260px;
+  margin: 0 30px;
+  padding-top: 73px;
+  padding-bottom: 73px;
+
+  @media (min-width: $tablet) {
+    margin: 0 50px;
+    padding-top: 101px;
+    padding-bottom: 75px;
+  }
 }
 
 .intro__title {
@@ -12,4 +20,12 @@
   @include text($basic-black, 27px, 30px, 700);
   text-align: center;
   color: $basic-black;
+
+  @media (min-width: $tablet) {
+    @include text($basic-black, 43px, 50px, 700);
+  }
+
+  @media (min-width: $desktop) {
+    @include text($basic-black, 53px, 57px, 700);
+  }
 }
