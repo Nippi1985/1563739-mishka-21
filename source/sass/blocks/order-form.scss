@@ -4,9 +4,10 @@
 }
 
 .order-form__legend {
-  @include text($font-sans, 17px, 16px, 700);
+  @include text($color-cyan-200, 17px, 16px, 700);
+  padding: 0;
   text-transform: uppercase;
-  color: $color-cyan-200;
+  min-width: 60px;
 }
 
 .order-form__list {
@@ -14,9 +15,8 @@
 }
 
 .order-form__label {
-  @include text($font-sans, 17px, 16px, 700);
+  @include text($color-cyan-200, 17px, 16px, 700);
   text-transform: uppercase;
-  color: $color-cyan-200;
 }
 
 .order-form__textarea {
@@ -29,5 +29,5 @@
 }
 
 .order-form__prompt {
-  @include text($font-sans, 14px, 16px, 400);
+  @include text($basic-black, 14px, 16px, 400);
 }
