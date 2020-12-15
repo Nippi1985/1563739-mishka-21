@@ -15,4 +15,8 @@
   @include reset-text;
   @include text($basic-black, 13px, 24px, 400);
   margin-bottom: 17px;
+
+  @media (min-width: $tablet) {
+    @include text($basic-black, 17px, 30px, 400);
+  }
 }
