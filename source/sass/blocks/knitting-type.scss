@@ -1,11 +1,30 @@
 .knitting-type {
   @include reset-list;
   display: block;
+
+  @media (min-width: $tablet) {
+    &--color {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
 }
 
 .knitting-type__item {
   margin-left: 60px;
+
+  @media (min-width: $tablet) {
+    &--color {
+      width: 30%;
+
+      @media (min-width: $desktop) {
+        width: 25%;
+      }
+    }
+  }
 }
+
 
 .knitting-type__radio + .knitting-type__label--radio-label {
   @include text($basic-black, 17px, 24px, 700);
@@ -42,7 +61,7 @@
 
 .knitting-type__radio:hover + .knitting-type__label--radio-label::before {
   border: 2px solid $color-cyan-200;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .knitting-type__radio:active + .knitting-type__label--radio-label::before {
@@ -100,7 +119,7 @@
 
 .knitting-type__checkbox:hover + .knitting-type__label--checkbox-label::before {
   border: 2px solid $color-cyan-200;
-  transition: all 0.2s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .knitting-type__checkbox:active + .knitting-type__label--checkbox-label::before {

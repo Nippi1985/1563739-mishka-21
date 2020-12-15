@@ -15,6 +15,13 @@
   @media (min-width: $tablet) {
     margin: 54px 50px 0 50px;
   }
+
+  @media (min-width: $desktop) {
+    &--text {
+      max-width: 702px;
+      margin: 54px auto;
+    }
+  }
 }
 
 .order__text {
@@ -31,9 +38,3 @@
   display: block;
 }
 
-.order-form__group {
-  @media (min-width: $tablet) {
-    /*display: flex;
-    flex-direction: row;*/
-  }
-}
