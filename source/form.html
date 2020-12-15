@@ -174,9 +174,11 @@
     <div class="order__container">
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br>
         форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-      <form class="order-form" method="post" action="http://echo.htmlacademy.ru">
+    </div>
+    <form class="order-form" method="post" action="http://echo.htmlacademy.ru">
+      <div class="order__container">
         <fieldset class="order-form__group">
-          <legend class="order-form__legend">Тип</legend>
+          <div class="order-form__legend">Тип</div>
           <ul class="order-form__list knitting-type">
             <li class="knitting-type__item">
               <input class="visually-hidden knitting-type__radio" type="radio" value="accessory" id="accessory" name="knitting-type" checked>
@@ -189,37 +191,66 @@
             </li>
           </ul>
         </fieldset>
+      </div>
+      <div class="order__background">
+        <div class="order__container">
+          <fieldset class="order-form__group">
+            <div class="order-form__legend">Цвет</div>
+            <ul class="order-form__list knitting-type">
+              <li class="knitting-type__item">
+                <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="white" id="white" checked>
+                <label class="knitting-type__label knitting-type__label--checkbox-label" for="white">
+                  <svg class="knitting-type__svg" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z" fill="black"/>
+                  </svg>
+                  Белый</label>
+              </li>
+              <li class="knitting-type__item">
+                <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="gray" id="gray" checked>
+                <label class="knitting-type__label knitting-type__label--checkbox-label" for="gray">
+                  <svg class="knitting-type__svg" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z" fill="black"/>
+                  </svg>
+                  Серый</label>
+              </li>
+              <li class="knitting-type__item">
+                <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="tiffany" id="tiffany">
+                <label class="knitting-type__label knitting-type__label--checkbox-label" for="tiffany">
+                  <svg class="knitting-type__svg" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z" fill="black"/>
+                  </svg>&laquo;Тиффани&raquo;</label>
+              </li>
+              <li class="knitting-type__item">
+                <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="black" id="black">
+                <label class="knitting-type__label knitting-type__label--checkbox-label" for="black">
+                  <svg class="knitting-type__svg" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z" fill="black"/>
+                  </svg>
+                  Черный</label>
+              </li>
+              <li class="knitting-type__item">
+                <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="rose" id="rose">
+                <label class="knitting-type__label knitting-type__label--checkbox-label" for="rose">
+                  <svg class="knitting-type__svg" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z" fill="black"/>
+                  </svg>
+                  Розовый</label>
+              </li>
+              <li class="knitting-type__item">
+                <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="orange" id="orange">
+                <label class="knitting-type__label knitting-type__label--checkbox-label" for="orange">
+                  <svg class="knitting-type__svg" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z" fill="black"/>
+                  </svg>
+                  Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+      <div class="order__container">
         <fieldset class="order-form__group">
-          <legend class="order-form__legend">Цвет</legend>
-          <ul class="order-form__list knitting-type">
-            <li class="knitting-type__item">
-              <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="white" id="white" checked>
-              <label class="knitting-type__label knitting-type__label--checkbox-label" for="white">Белый</label>
-            </li>
-            <li class="knitting-type__item">
-              <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="gray" id="gray" checked>
-              <label class="knitting-type__label knitting-type__label--checkbox-label" for="gray">Серый</label>
-            </li>
-            <li class="knitting-type__item">
-              <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="tiffany" id="tiffany">
-              <label class="knitting-type__label knitting-type__label--checkbox-label" for="tiffany">&laquo;Тиффани&raquo;</label>
-            </li>
-            <li class="knitting-type__item">
-              <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="black" id="black">
-              <label class="knitting-type__label knitting-type__label--checkbox-label" for="black">Черный</label>
-            </li>
-            <li class="knitting-type__item">
-              <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="rose" id="rose">
-              <label class="knitting-type__label knitting-type__label--checkbox-label" for="rose">Розовый</label>
-            </li>
-            <li class="knitting-type__item">
-              <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="orange" id="orange">
-              <label class="knitting-type__label knitting-type__label--checkbox-label" for="orange">Оранжевый</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="order-form__group">
-          <legend class="order-form__legend">ФИО</legend>
+          <div class="order-form__legend">ФИО</div>
           <ul class="order-form__list order-user">
             <li class="order-user__item">
               <label class="order-user__label">
@@ -239,27 +270,33 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__group">
-          <ul class="order-form__list order-contacts">
-            <li class="order-contacts__item">
-              <label class="order-contacts__label">Тел
-                <input class="order-contacts__input order-contacts__input--icon-phone" type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required>
-              </label>
-            </li>
-            <li class="order-contacts__item">
-              <label class="order-contacts__label">E-mail
-                <input class="order-contacts__input order-contacts__input--icon-mail" type="email" placeholder="Ваш Email*" name="email" required>
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <label class="order-form__label">Доп<!--TODO: вопросы по названию класса и необходимости обертки -->
-          <textarea class="order-form__textarea" name="text" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        </label>
+      </div>
+      <div class="order__background">
+        <div class="order__container">
+          <fieldset class="order-form__group">
+            <ul class="order-form__list order-contacts">
+              <li class="order-contacts__item">
+                <label class="order-contacts__label">Тел
+                  <input class="order-contacts__input order-contacts__input--icon-phone" type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required>
+                </label>
+              </li>
+              <li class="order-contacts__item">
+                <label class="order-contacts__label">E-mail
+                  <input class="order-contacts__input order-contacts__input--icon-mail" type="email" placeholder="Ваш Email*" name="email" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+      </div>
+      <div class="order__container">
+        <label class="order-form__label" for="textarea">Доп</label>
+        <textarea class="order-form__textarea" name="text" id="textarea" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
         <button class="button" type="submit">Отправить заказ</button>
         <span class="order-form__prompt">*Поля обязательны для заполнения</span>
-      </form>
-    </div>
+      </div>
+    </form>
+
   </section>
 </main>
 <footer class="page-footer">

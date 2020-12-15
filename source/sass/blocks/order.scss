@@ -2,6 +2,12 @@
   background-color: $basic-white;
 }
 
+.order__background {
+  @media (min-width: $tablet) {
+    background-color: $color-gray-200;
+  }
+}
+
 .order__container {
   min-width: 260px;
   margin: 17px 30px 0 30px;
@@ -18,5 +24,16 @@
 
   @media (min-width: $tablet) {
     @include text($basic-black, 17px, 30px, 400);
+  }
+}
+
+.order-form__legend {
+  display: block;
+}
+
+.order-form__group {
+  @media (min-width: $tablet) {
+    /*display: flex;
+    flex-direction: row;*/
   }
 }
