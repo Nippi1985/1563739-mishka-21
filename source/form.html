@@ -284,11 +284,15 @@
         </div>
       </div>
       <div class="order__container">
-        <fieldset class="order-form__group">
-          <label class="order-form__label" for="textarea">Доп</label>
-          <textarea class="order-form__textarea" name="text" id="textarea" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          <span class="order-form__prompt">*Поля обязательны для заполнения</span>
-          <button class="button button--decor button--order" type="submit">Отправить заказ</button>
+        <fieldset class="order-form__group order-form__group--textarea">
+          <div class="order-form__container">
+            <label class="order-form__label" for="textarea">Доп</label>
+            <textarea class="order-form__textarea" name="text" id="textarea" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </div>
+          <div class="order-form__container order-form__container--prompt">
+            <span class="order-form__prompt">*Поля обязательны для заполнения</span>
+            <button class="button button--decor button--order" type="submit">Отправить заказ</button>
+          </div>
         </fieldset>
       </div>
     </form>
