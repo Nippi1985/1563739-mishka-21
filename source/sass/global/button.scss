@@ -2,19 +2,19 @@
   @include text($color-gray-500, 17px, 20px, 700);
 
   &--decor {
-    display: block;
-    box-sizing: border-box;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    text-align: center;
-    text-transform: uppercase;
     background-color: $basic-white;
     border: 2px solid $color-gray-500;
+    box-sizing: border-box;
+    display: block;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    text-align: center;
+    text-transform: uppercase;
   }
 
   &:hover {
-    color: $basic-white;
     background-color: $color-gray-500;
+    color: $basic-white;
   }
 
   &:active {
@@ -22,8 +22,8 @@
   }
 
   &--promo {
-    min-width: 260px;
     margin-bottom: 36px;
+    min-width: 260px;
 
     @media (min-width: $tablet) {
       margin: 0;
@@ -31,13 +31,13 @@
   }
 
   &--feedback {
-    min-width: 260px;
     margin-bottom: 45px;
+    min-width: 260px;
 
     @media (min-width: $tablet) {
-      order: 1;
       min-height: 52px;
       min-width: 175px;
+      order: 1;
     }
   }
 
@@ -50,12 +50,18 @@
     }
 
     @media (min-width: $desktop) {
-      margin-left: 230px;
-      height: 52px;
-      grid-column-start: 1;
       grid-column-end: 2;
-      grid-row-start: 3;
+      grid-column-start: 1;
       grid-row-end: 4;
+      grid-row-start: 3;
+      height: 52px;
+      margin-left: 230px;
     }
+  }
+
+  &--order {
+    margin-top: 30px;
+    min-height: 52px;
+    width: 100%;
   }
 }

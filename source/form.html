@@ -253,20 +253,16 @@
           <h2 class="order-form__legend">ФИО</h2>
           <ul class="order-form__list order-user">
             <li class="order-user__item">
-              <label class="order-user__label">
-                Имя:<input class="order-user__input" type="text" placeholder="Введите ваше имя*" name="user-first-name" required>
-              </label>
+              <label class="order-user__label" for="fist-name">Имя:</label>
+              <input class="order-user__input" type="text" placeholder="Введите ваше имя*" name="user-first-name" id="fist-name" required>
             </li>
             <li class="order-user__item">
-              <label class="order-user__label">
-                Фамилия:<input class="order-user__input" type="text" placeholder="Укажите фамилию*" name="user-last-name" required>
-              </label>
+              <label class="order-user__label" for="last-name">Фамилия:</label>
+              <input class="order-user__input" type="text" placeholder="Укажите фамилию*" name="user-last-name" id="last-name" required>
             </li>
             <li class="order-user__item">
-              <label class="order-user__label">
-                Отчество:<input class="order-user__input" type="text" placeholder="Отчество, если желаете"
-                                name="very-last-name">
-              </label>
+              <label class="order-user__label" for="very-last-name">Отчество:</label>
+              <input class="order-user__input" type="text" placeholder="Отчество, если желаете" name="very-last-name" id="very-last-name">
             </li>
           </ul>
         </fieldset>
@@ -276,24 +272,24 @@
           <fieldset class="order-form__group">
             <ul class="order-form__list order-contacts">
               <li class="order-contacts__item">
-                <label class="order-contacts__label">Тел
-                  <input class="order-contacts__input order-contacts__input--icon-phone" type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" required>
-                </label>
+                <label class="order-contacts__label" for="phone">Тел</label>
+                <input class="order-contacts__input order-contacts__input--icon-phone" type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" id="phone" required>
               </li>
               <li class="order-contacts__item">
-                <label class="order-contacts__label">E-mail
-                  <input class="order-contacts__input order-contacts__input--icon-mail" type="email" placeholder="Ваш Email*" name="email" required>
-                </label>
+                <label class="order-contacts__label" for="email">E-mail</label>
+                <input class="order-contacts__input order-contacts__input--icon-mail" type="email" placeholder="Ваш Email*" name="email" id="email" required>
               </li>
             </ul>
           </fieldset>
         </div>
       </div>
       <div class="order__container">
-        <label class="order-form__label" for="textarea">Доп</label>
-        <textarea class="order-form__textarea" name="text" id="textarea" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
-        <button class="button" type="submit">Отправить заказ</button>
-        <span class="order-form__prompt">*Поля обязательны для заполнения</span>
+        <fieldset class="order-form__group">
+          <label class="order-form__label" for="textarea">Доп</label>
+          <textarea class="order-form__textarea" name="text" id="textarea" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          <span class="order-form__prompt">*Поля обязательны для заполнения</span>
+          <button class="button button--decor button--order" type="submit">Отправить заказ</button>
+        </fieldset>
       </div>
     </form>
 
