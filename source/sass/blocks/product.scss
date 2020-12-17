@@ -1,7 +1,7 @@
 .product {
   border: 1px solid $color-gray-100;
   box-sizing: border-box;
-  width: 100%;
+  margin: 0 auto;
 
   &:hover .product__block {
     box-shadow: 0 6px 10px rgba($basic-black, 0.1%);
