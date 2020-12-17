@@ -62,9 +62,14 @@
   &--order {
     min-height: 52px;
     width: 100%;
+    cursor: pointer;
 
     @media (min-width: $tablet) {
       width: 230px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-left: 160px;
     }
   }
 }

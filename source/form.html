@@ -195,7 +195,7 @@
       <div class="order__background">
         <div class="order__container">
           <fieldset class="order-form__group">
-            <h2 class="order-form__legend">Цвет</h2>
+            <h2 class="order-form__legend order-form__legend--color">Цвет</h2>
             <ul class="order-form__list knitting-type knitting-type--color">
               <li class="knitting-type__item knitting-type__item--color">
                 <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="white" id="white" checked>
@@ -250,19 +250,19 @@
       </div>
       <div class="order__container">
         <fieldset class="order-form__group">
-          <h2 class="order-form__legend">ФИО</h2>
+          <h2 class="order-form__legend order-form__legend--name">ФИО</h2>
           <ul class="order-form__list order-user">
             <li class="order-user__item">
               <label class="order-user__label" for="fist-name">Имя:</label>
-              <input class="order-user__input" type="text" placeholder="Введите ваше имя*" name="user-first-name" id="fist-name" required>
+              <input class="order-user__input" type="text" placeholder="Введите ваше имя*" name="user-first-name" id="fist-name" autocomplete="disabled" required>
             </li>
             <li class="order-user__item">
               <label class="order-user__label" for="last-name">Фамилия:</label>
-              <input class="order-user__input" type="text" placeholder="Укажите фамилию*" name="user-last-name" id="last-name" required>
+              <input class="order-user__input" type="text" placeholder="Укажите фамилию*" name="user-last-name" id="last-name" autocomplete="disabled" required>
             </li>
             <li class="order-user__item">
               <label class="order-user__label" for="very-last-name">Отчество:</label>
-              <input class="order-user__input" type="text" placeholder="Отчество, если желаете" name="very-last-name" id="very-last-name">
+              <input class="order-user__input" type="text" placeholder="Отчество, если желаете" name="very-last-name" id="very-last-name" autocomplete="disabled">
             </li>
           </ul>
         </fieldset>
@@ -273,11 +273,11 @@
             <ul class="order-form__list order-contacts">
               <li class="order-contacts__item">
                 <label class="order-contacts__label" for="phone">Тел</label>
-                <input class="order-contacts__input order-contacts__input--icon-phone" type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" id="phone" required>
+                <input class="order-contacts__input order-contacts__input--icon-phone order-contacts__input--number" type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" id="phone" autocomplete="disabled" required>
               </li>
               <li class="order-contacts__item">
                 <label class="order-contacts__label" for="email">E-mail</label>
-                <input class="order-contacts__input order-contacts__input--icon-mail" type="email" placeholder="Ваш Email*" name="email" id="email" required>
+                <input class="order-contacts__input order-contacts__input--icon-mail" type="email" placeholder="Ваш Email*" name="email" id="email" autocomplete="disabled" required>
               </li>
             </ul>
           </fieldset>
@@ -287,7 +287,7 @@
         <fieldset class="order-form__group order-form__group--textarea">
           <div class="order-form__container">
             <label class="order-form__label" for="textarea">Доп</label>
-            <textarea class="order-form__textarea" name="text" id="textarea" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="order-form__textarea" name="text" id="textarea" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           <div class="order-form__container order-form__container--prompt">
             <span class="order-form__prompt">*Поля обязательны для заполнения</span>
