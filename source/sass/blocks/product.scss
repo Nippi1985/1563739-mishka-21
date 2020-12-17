@@ -1,6 +1,7 @@
 .product {
   border: 1px solid $color-gray-100;
   box-sizing: border-box;
+  width: 100%;
 
   &:hover .product__block {
     box-shadow: 0 6px 10px rgba($basic-black, 0.1%);
@@ -14,6 +15,7 @@
 .product__title {
   @include reset-heading;
   @include text($basic-black, 17px, 24px, 700);
+  margin-top: 27px;
 
   &:hover,
   &:focus {
@@ -27,11 +29,51 @@
 
 .product__info {
   @include reset-text;
-  @include text($font-sans, 13px, 30px, 400);
-  color: $color-gray-500;
+  @include text($color-gray-500, 13px, 30px, 400);
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .product__price {
   @include reset-text;
   @include text($basic-black, 15px, 24px, 700);
+  width: 80%;
+}
+
+.product__image-block {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.product__block {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 28px 32px 28px;
+}
+
+.product__link {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.product__image {
+  display: block;
+}
+
+.product__add-to-cart {
+  display: flex;
+  justify-content: flex-end;
+  width: 20%;
+
+  &:hover path {
+    fill: $color-cyan-200;
+    opacity: 1;
+  }
+
+  &:active,
+  &:focus {
+    fill: $color-cyan-200;
+    opacity: 0.3;
+  }
 }

@@ -9,4 +9,10 @@
 
 .catalog__list {
   @include reset-list;
+  width: 100%;
+}
+
+.catalog__item {
+  margin-top: 30px;
+  width: 100%;
 }
