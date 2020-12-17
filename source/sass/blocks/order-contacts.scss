@@ -56,7 +56,6 @@
   margin-top: 22px;
   padding-bottom: 20px;
   background-color: transparent;
-  -moz-appearance: textfield;
 
   @media (min-width: $tablet) {
     margin-top: 31px;
@@ -84,14 +83,18 @@
 
 .order-contacts__input::-webkit-outer-spin-button,
 .order-contacts__input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
 
+/*.order-contacts__input[type="number"] {
+  appearance: textfield;
+}*/
+
 .order-contacts__input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 50px $basic-white;
+  box-shadow: inset 0 0 0 50px $basic-white;
 
   @media (min-width: $tablet) {
-    -webkit-box-shadow: inset 0 0 0 50px $color-gray-200;
+    box-shadow: inset 0 0 0 50px $color-gray-200;
   }
 }
