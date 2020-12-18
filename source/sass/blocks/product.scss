@@ -7,8 +7,6 @@
     display: flex;
     flex-wrap: nowrap;
     max-width: 668px;
-
-    @include outline(blue);
   }
 
   &:hover .product__block {
@@ -28,8 +26,6 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     margin-bottom: 10px;
-
-    @include outline(gold);
   }
 
   &:hover,
@@ -45,28 +41,20 @@
 .product__info {
   @include reset-text;
   @include text($color-gray-500, 13px, 30px, 400);
-  width: 100%;
   margin-bottom: 40px;
+  width: 100%;
 
   @media (min-width: $tablet) {
     font-size: 15px;
-
-    @include outline(orange);
   }
 }
 
 .product__price {
   @include reset-text;
   @include text($basic-black, 15px, 24px, 700);
-  width: 80%;
-  margin-bottom: 26px;
 
   @media (min-width: $tablet) {
     font-size: 17px;
-    margin-top: auto;
-    margin-bottom: 25px;
-
-    @include outline(red);
   }
 }
 
@@ -75,8 +63,21 @@
   width: 100%;
 
   @media (min-width: $tablet) {
-    width: 334px;
     min-height: 334px;
+    width: 334px;
+  }
+}
+
+.product__price-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
   }
 }
 
@@ -87,19 +88,15 @@
   padding: 0 28px 0 28px;
 
   @media (min-width: $tablet) {
+    flex-direction: column;
     width: 334px;
-    align-items: flex-start;
-
-    @include outline(red);
   }
 }
 
 .product__link {
+  height: min-content;
   margin: 0;
   padding: 0;
-  height: min-content;
-
-  @include outline(silver);
 }
 
 .product__image {
@@ -113,13 +110,6 @@
 .product__add-to-cart {
   display: flex;
   justify-content: flex-end;
-  width: 20%;
-  margin-bottom: 26px;
-
-  @media (min-width: $tablet) {
-    margin-top: auto;
-    margin-bottom: 25px;
-  }
 
   &:hover path {
     fill: $color-cyan-200;
