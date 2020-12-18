@@ -7,6 +7,8 @@
     display: flex;
     flex-wrap: nowrap;
     max-width: 668px;
+
+    @include outline(blue);
   }
 
   &:hover .product__block {
@@ -26,6 +28,8 @@
   @media (min-width: $tablet) {
     font-size: 20px;
     margin-bottom: 10px;
+
+    @include outline(gold);
   }
 
   &:hover,
@@ -46,6 +50,8 @@
 
   @media (min-width: $tablet) {
     font-size: 15px;
+
+    @include outline(orange);
   }
 }
 
@@ -53,10 +59,14 @@
   @include reset-text;
   @include text($basic-black, 15px, 24px, 700);
   width: 80%;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet) {
     font-size: 17px;
     margin-top: auto;
+    margin-bottom: 25px;
+
+    @include outline(red);
   }
 }
 
@@ -74,17 +84,22 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  padding: 0 28px 32px 28px;
+  padding: 0 28px 0 28px;
 
   @media (min-width: $tablet) {
     width: 334px;
-    align-content: flex-start;
+    align-items: flex-start;
+
+    @include outline(red);
   }
 }
 
 .product__link {
   margin: 0;
   padding: 0;
+  height: min-content;
+
+  @include outline(silver);
 }
 
 .product__image {
@@ -99,6 +114,12 @@
   display: flex;
   justify-content: flex-end;
   width: 20%;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet) {
+    margin-top: auto;
+    margin-bottom: 25px;
+  }
 
   &:hover path {
     fill: $color-cyan-200;
