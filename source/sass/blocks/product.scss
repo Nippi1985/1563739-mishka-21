@@ -3,6 +3,12 @@
   box-sizing: border-box;
   margin: 0 auto;
 
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 668px;
+  }
+
   &:hover .product__block {
     box-shadow: 0 6px 10px rgba($basic-black, 0.1%);
   }
@@ -16,6 +22,11 @@
   @include reset-heading;
   @include text($basic-black, 17px, 24px, 700);
   margin-top: 27px;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 
   &:hover,
   &:focus {
@@ -32,33 +43,56 @@
   @include text($color-gray-500, 13px, 30px, 400);
   width: 100%;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet) {
+    font-size: 15px;
+  }
 }
 
 .product__price {
   @include reset-text;
   @include text($basic-black, 15px, 24px, 700);
   width: 80%;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    margin-top: auto;
+  }
 }
 
 .product__image-block {
   box-sizing: border-box;
   width: 100%;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    min-height: 334px;
+  }
 }
 
 .product__block {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   padding: 0 28px 32px 28px;
+
+  @media (min-width: $tablet) {
+    width: 334px;
+    align-content: flex-start;
+  }
 }
 
 .product__link {
-  display: block;
-  height: 100%;
-  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .product__image {
   display: block;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
 }
 
 .product__add-to-cart {
