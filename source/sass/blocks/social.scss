@@ -11,29 +11,35 @@
 .social__link--insta {
   &:hover .social__svg--insta path {
     fill: $color-cyan-400;
+    transition: all 0.3s ease-in-out;
   }
 
   &:active .social__svg--insta path {
     fill: rgba($color-cyan-400, 0.3);
+    transition: all 0.1s ease-in-out;
   }
 }
 
 .social__link--fb {
   &:hover .social__svg--fb path {
     fill: $color-cyan-400;
+    transition: all 0.3s ease-in-out;
   }
 
   &:active .social__svg--fb path {
     fill: rgba($color-cyan-400, 0.3);
+    transition: all 0.1s ease-in-out;
   }
 }
 
 .social__link--twitter {
   &:hover .social__svg--twitter path {
     fill: $color-cyan-400;
+    transition: all 0.3s ease-in-out;
   }
 
   &:active .social__svg--twitter path {
     fill: rgba($color-cyan-400, 0.3);
+    transition: all 0.1s ease-in-out;
   }
 }

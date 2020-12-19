@@ -15,10 +15,12 @@
   &:hover {
     background-color: $color-gray-500;
     color: $basic-white;
+    transition: all 0.4s ease-in-out;
   }
 
   &:active {
     color: rgba($basic-white, 0.3);
+    transition: all 0.1s ease-out;
   }
 
   &--promo {

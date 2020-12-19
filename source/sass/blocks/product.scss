@@ -132,11 +132,13 @@
   &:hover path {
     fill: $color-cyan-200;
     opacity: 1;
+    transition: all 0.3s ease-out;
   }
 
   &:active,
   &:focus {
     fill: $color-cyan-200;
     opacity: 0.3;
+    transition: all 0.1s ease-out;
   }
 }

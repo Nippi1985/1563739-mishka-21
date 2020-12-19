@@ -31,9 +31,11 @@
 .page-footer__link {
   &:hover .page-footer__svg path {
     fill: $color-cyan-400;
+    transition: all 0.3s ease-in-out;
   }
 
   &:active .page-footer__svg path {
     fill: rgba($color-cyan-400, 0.3);
+    transition: all 0.1s ease-in-out;
   }
 }
