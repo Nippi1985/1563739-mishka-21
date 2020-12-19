@@ -18,6 +18,11 @@
     margin: 0 50px;
     height: 143px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .page-footer__logo {

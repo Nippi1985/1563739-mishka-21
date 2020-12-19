@@ -74,4 +74,10 @@
       margin-left: 160px;
     }
   }
+
+  &--video {
+    @media (min-width: $desktop) {
+      max-width: 230px;
+    }
+  }
 }

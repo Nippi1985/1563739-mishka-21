@@ -11,6 +11,11 @@
     height: 89px;
     justify-content: flex-end;
   }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: 1050px;
+  }
 }
 
 .page-header__container {
@@ -28,6 +33,7 @@
   }
 
   @media (min-width: $desktop) {
+    max-width: 1050px;
     position: absolute;
     top: 5px;
     left: 0;
@@ -45,7 +51,6 @@
   @media (min-width: $tablet) {
     position: absolute;
     top: 108px;
-    right: 50px;
 
     @include text($color-gray-500, 15px, 24px, 400);
     font-family: $font-sans;
