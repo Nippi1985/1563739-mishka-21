@@ -32,10 +32,12 @@
   &--active {
     &:hover {
       opacity: 60%;
+      transition: all 0.3s ease-in-out;
     }
 
     &:active {
       opacity: 30%;
+      transition: all 0.1s ease-in-out;
     }
   }
 }

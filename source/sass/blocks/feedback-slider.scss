@@ -4,8 +4,6 @@
   @media (min-width: $tablet) {
     order: 2;
     width: 100%;
-
-    @include outline(red);
   }
 }
 

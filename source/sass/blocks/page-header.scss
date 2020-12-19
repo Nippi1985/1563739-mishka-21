@@ -49,10 +49,13 @@
   }
 
   @media (min-width: $tablet) {
+    @include text($color-gray-500, 15px, 24px, 400);
     position: absolute;
     top: 108px;
+    right: 50px;
+  }
 
-    @include text($color-gray-500, 15px, 24px, 400);
-    font-family: $font-sans;
+  @media (min-width: $desktop) {
+    right: 0;
   }
 }

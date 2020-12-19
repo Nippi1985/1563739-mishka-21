@@ -3,6 +3,7 @@
   margin: 0 30px;
 
   @media (min-width: $tablet) {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -19,8 +20,10 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet) {
-    order: 4;
-    width: 50%;
+    position: absolute;
+    width: 175px;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -32,6 +35,10 @@
   border: 1px solid $color-gray-100;
   cursor: pointer;
   outline: none;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
 
   &--next svg {
     transform: rotate(180deg);
