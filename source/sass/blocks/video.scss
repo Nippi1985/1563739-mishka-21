@@ -13,9 +13,9 @@
   width: 260px;
 
   @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-
-    @include outline(red);
   }
 
   &:hover .video__background {
@@ -28,11 +28,22 @@
 }
 
 .video__background {
-  padding-bottom: 33px;
+  padding: 0 33px 33px 33px;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+    order: 2;
+    padding: 0 42px 46px 42px;
+  }
 }
 
 .video__image-wrapper {
   position: relative;
+
+  @media (min-width: $tablet) {
+    width: 682px;
+    height: 455px;
+  }
 }
 
 .video__title {
@@ -42,6 +53,12 @@
   margin: 21px 0 26px 91px;
   position: relative;
   width: 156px;
+
+  @media (min-width: $tablet) {
+    font-size: 24px;
+    width: 100%;
+    order: 1;
+  }
 
   &::before {
     background-image: url("../img/video.svg");
@@ -60,7 +77,11 @@
   @include reset-text;
   @include text($color-gray-500, 13px, 24px, 400);
   margin: 35px 0 31px 0;
-  padding: 0 32px;
+
+  @media (min-width: $tablet) {
+    font-size: 15px;
+    line-height: 30px;
+  }
 }
 
 .video__button {

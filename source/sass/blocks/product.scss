@@ -52,6 +52,23 @@
 .product__price {
   @include reset-text;
   @include text($basic-black, 15px, 24px, 700);
+  position: relative;
+
+  &::before {
+    background-color: $color-gray-100;
+    background-repeat: no-repeat;
+    content: "";
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: -22px;
+    width: 204px;
+
+    @media (min-width: $tablet) {
+      width: 268px;
+      top: -23px;
+    }
+  }
 
   @media (min-width: $tablet) {
     font-size: 17px;
@@ -71,8 +88,8 @@
 .product__price-block {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   margin-bottom: 26px;
+  width: 100%;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -90,6 +107,7 @@
   @media (min-width: $tablet) {
     flex-direction: column;
     width: 334px;
+    padding: 0 33px 0 33px;
   }
 }
 
