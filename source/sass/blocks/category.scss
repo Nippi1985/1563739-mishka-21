@@ -12,6 +12,11 @@
   @media (min-width: $tablet) {
     margin: 0 50px;
   }
+
+  @media (min-width: $desktop) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
 }
 
 .category__item {
