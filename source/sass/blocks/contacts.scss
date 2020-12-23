@@ -1,9 +1,12 @@
 .contacts {
   @media (min-width: $desktop) {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1050px;
     display: grid;
-    grid-template-columns: 548px 1fr;
+    grid-template-columns: 461px 527px;
     grid-template-rows: min-content min-content min-content;
-    column-gap: 54px;
+    column-gap: 62px;
   }
 }
 
@@ -16,7 +19,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 100px 0 0 230px;
+    margin: 100px 0 0 150px;
   }
 }
 
@@ -111,13 +114,10 @@
 }
 
 .contacts__map {
-  margin-top: 62px;
-  margin-bottom: 42px;
   min-width: 320px;
   height: 450px;
 
   @media (min-width: $desktop) {
-    margin: 0 50px 0 0;
     grid-row-start: 1;
     grid-row-end: -1;
     grid-column-start: 2;
