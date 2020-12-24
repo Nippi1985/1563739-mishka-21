@@ -12,10 +12,10 @@
 
 .contacts__container {
   min-width: 260px;
-  margin: 0 30px;
+  margin: 38px 30px 0 30px;
 
   @media (min-width: $tablet) {
-    margin: 0 50px;
+    margin: 68px 50px 0 50px;
   }
 
   @media (min-width: $desktop) {
@@ -116,12 +116,18 @@
 .contacts__map {
   min-width: 320px;
   height: 450px;
+  margin: 62px 0 41px 0;
+
+  @media (min-width: $tablet) {
+    margin: 49px 0 55px 0;
+  }
 
   @media (min-width: $desktop) {
     grid-row-start: 1;
     grid-row-end: -1;
     grid-column-start: 2;
     grid-column-end: 3;
+    margin: 0;
   }
 }
 

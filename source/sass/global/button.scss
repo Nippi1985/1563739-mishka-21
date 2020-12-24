@@ -32,11 +32,10 @@
   }
 
   &--feedback {
-    margin-bottom: 45px;
     min-width: 260px;
 
     @media (min-width: $tablet) {
-      min-height: 52px;
+      height: min-content;
       min-width: 175px;
       order: 1;
     }
