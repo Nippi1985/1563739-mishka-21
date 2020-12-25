@@ -1,18 +1,24 @@
 .product-details {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
 
 .product-details__feature {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: $color-gray-500;
+  min-width: 40%;
+
+  @include text($color-gray-500, 15px, 20px, 400);
+  border-bottom: 1px solid $color-gray-100;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 
 .product-details__value {
+  min-width: 60%;
+
+  @include text($color-gray-500, 15px, 20px, 400);
   margin: 0;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: $color-gray-500;
+  border-bottom: 1px solid $color-gray-100;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }

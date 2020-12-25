@@ -3,10 +3,41 @@
 }
 
 .catalog__container {
-  width: 260px;
-  padding: 0 30px;
+  min-width: 260px;
+  margin: 0 30px;
+
+  @media (min-width: $tablet) {
+    margin: 0 50px;
+  }
 }
 
 .catalog__list {
   @include reset-list;
+  width: 260px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1050px;
+    display: flex;
+  }
+}
+
+.catalog__item {
+  margin-top: 30px;
+
+  @media (min-width: $tablet) {
+    margin: 54px auto 0 auto;
+
+    &:nth-child(3n+1) {
+      margin-left: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
 }

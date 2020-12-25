@@ -1,16 +1,35 @@
 .site-list {
-  list-style-type: none;
+  display: flex; /* меняем через JS на display: flex/none для отображения */
+  flex-direction: column;
 
-  @include reset-list;
+  @media (min-width: $tablet) {
+    display: flex;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    max-width: 370px;
+  }
+
+  @media (min-width: $desktop) {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 470px;
+    flex-wrap: wrap;
+  }
 }
 
 .site-list__link {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  @include text($basic-black, 17px, 24px, 700);
+  display: block;
+  padding: 27px 0 27px 76px;
   font-family: $font-sans;
-  color: $basic-black;
   background-color: $basic-white;
+  box-shadow: 0 1px 0 $color-gray-100, inset 0 1px 0 $color-gray-100;
 
   &:hover,
   &:focus {
@@ -19,5 +38,50 @@
 
   &:active {
     color: rgba($basic-black, 0.3);
+  }
+
+  @media (min-width: $tablet) {
+    @include text($basic-black, 15px, 24px, 700);
+    background-color: transparent;
+    padding: 10px 19px 10px 0;
+    box-shadow: none;
+  }
+
+  @media (min-width: $desktop) {
+    @include text($basic-black, 17px, 24px, 700);
+    background-color: $basic-white;
+    padding: 33px 35px 31px 0;
+  }
+}
+
+.site-list__link--arrivals {
+  display: none;
+
+  @media (min-width: $desktop) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    background-color: transparent;
+
+    @include text($basic-black, 15px, 24px, 700);
+  }
+}
+
+.site-list__link--sell {
+  display: none;
+
+  @media (min-width: $desktop) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: block;
+    background-color: transparent;
+
+    @include text($basic-black, 15px, 24px, 700);
+  }
+}
+
+.site-list__item {
+  @media (min-width: $desktop) {
+    min-width: 235px;
   }
 }

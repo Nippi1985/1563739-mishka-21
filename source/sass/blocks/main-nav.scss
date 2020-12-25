@@ -1,0 +1,36 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: flex-end;
+    margin: 0 auto;
+    max-width: 1050px;
+  }
+}
+
+.main-nav__toggle {
+  background-color: transparent;
+  background-image: url("../../img/menu.svg");
+  border: 0;
+  cursor: pointer;
+  height: 14px;
+  position: absolute;
+  right: 31px;
+  top: 32px;
+  width: 20px;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.main-nav__list {
+  @include reset-list;
+}

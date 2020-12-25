@@ -1,0 +1,31 @@
+/*
+.cart-block {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.cart-block__link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 314px;
+  min-height: 89px;
+
+  &:hover .cart-block__svg path {
+    fill: $color-cyan-200;
+    opacity: 1;
+  }
+
+  &:active .cart-block__svg path {
+    fill: $color-cyan-200;
+    opacity: 0.3;
+  }
+}
+
+.cart-block__svg {
+  padding-left: 31px;
+}
+*/

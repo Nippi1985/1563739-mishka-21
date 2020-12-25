@@ -1,24 +1,118 @@
 .category__list {
   @include reset-list;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.category__wrapper {
+  @media (min-width: $tablet) {
+    margin: 0 50px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    max-width: 1050px;
+  }
 }
 
 .category__item {
-  width: 100%;
+  display: block;
   height: 103px;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    height: 119px;
+  }
+
+  &--bright {
+    @media (min-width: $tablet) {
+      &:hover {
+        /*box-shadow: 0 -5px 0 $color-cyan-200;*/
+        height: 124px;
+        margin-top: -5px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover .category__svg--interior {
+        opacity: 0.7;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:active .category__svg--interior {
+        opacity: 0.3;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  &--darken {
+    @media (min-width: $tablet) {
+      &:hover {
+        /*box-shadow: 0 -5px 0 $color-cyan-300;*/
+        height: 124px;
+        margin-top: -5px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover .category__svg--toy {
+        opacity: 0.7;
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:active .category__svg--toy {
+        opacity: 0.3;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
 }
 
 .category__link {
-  @include text($basic-white, 19px, 24px, 700);
-  display: block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  padding-top: 24px;
-  padding-bottom: 31px;
-  font-family: $font-sans;
   background-color: $color-cyan-200;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 
   &--darken-color {
     background-color: $color-cyan-300;
+  }
+}
+
+.category__svg {
+  &--toy {
+    padding: 21px 27px 0 0;
+    opacity: 0.5;
+
+    @media (min-width: $tablet) {
+      padding: 31px 33px 0 0;
+    }
+  }
+
+  &--interior {
+    padding: 23px 36px 0 0;
+    opacity: 0.5;
+
+    @media (min-width: $tablet) {
+      padding: 30px 36px 0 0;
+    }
+  }
+}
+
+.category__text {
+  @include reset-text;
+  @include text($basic-white, 19px, 24px, 700);
+  font-family: $font-sans;
+  max-width: 170px;
+  padding: 24px 0 31px 30px;
+
+  @media (min-width: $tablet) {
+    @include text($basic-white, 20px, 30px, 700);
+    padding: 25px 0 34px 36px;
   }
 }

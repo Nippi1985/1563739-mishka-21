@@ -1,12 +1,26 @@
-.contacts__container {
-  width: 260px;
-  padding: 0 30px;
+.contacts {
+  @media (min-width: $desktop) {
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1050px;
+    display: grid;
+    grid-template-columns: 461px 527px;
+    grid-template-rows: min-content min-content min-content;
+    column-gap: 62px;
+  }
 }
 
+.contacts__container {
+  min-width: 260px;
+  margin: 38px 30px 0 30px;
 
-.contacts__term {
-  @include text($color-gray-500, 14px, 30px, 400);
-  font-style: normal;
+  @media (min-width: $tablet) {
+    margin: 68px 50px 0 50px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 100px 0 0 150px;
+  }
 }
 
 .contacts__email {
@@ -23,9 +37,100 @@
   &:active {
     border-bottom: 1px solid rgba($color-cyan-200, 0.1%);
   }
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 5px;
+  }
 }
 
 .contacts__text {
+  @include reset-text;
   @include text($color-gray-500, 14px, 30px, 400);
   font-style: normal;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop) {
+    display: flex;
+  }
+}
+
+.contacts__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    flex-wrap: nowrap;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts__term {
+  @include text($color-gray-500, 14px, 30px, 400);
+  font-style: normal;
+  min-width: 30%;
+  margin-top: 15px;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    min-width: 90px;
+  }
+
+  @media (min-width: $desktop) {
+    min-width: min-content;
+    margin: 0 24px 25px 0;
+  }
+}
+
+.contacts__definition {
+  margin: 0;
+  width: 70%;
+  margin-top: 15px;
+
+  @media (min-width: $tablet) {
+    width: auto;
+    margin-right: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 220px;
+    margin: 0;
+  }
+}
+
+.contacts__map {
+  min-width: 320px;
+  height: 450px;
+  margin: 62px 0 41px 0;
+
+  @media (min-width: $tablet) {
+    margin: 49px 0 55px 0;
+  }
+
+  @media (min-width: $desktop) {
+    grid-row-start: 1;
+    grid-row-end: -1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 0;
+  }
+}
+
+.contacts__iframe {
+  border: none;
 }

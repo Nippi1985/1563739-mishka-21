@@ -1,8 +1,46 @@
 .page-footer {
+  margin-top: 57px;
   background-color: $color-gray-200;
 }
 
 .page-footer__container {
-  width: 260px;
-  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 260px;
+  height: 160px;
+  margin: 0 30px;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 50px;
+    height: 143px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1050px;
+    margin: 0 auto;
+  }
+}
+
+.page-footer__logo {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
+
+.page-footer__link {
+  &:hover .page-footer__svg path {
+    fill: $color-cyan-400;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:active .page-footer__svg path {
+    fill: rgba($color-cyan-400, 0.3);
+    transition: all 0.1s ease-in-out;
+  }
 }

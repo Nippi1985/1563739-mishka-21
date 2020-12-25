@@ -1,12 +1,53 @@
 .hero {
-  width: 100%;
-  height: 300px;
+  position: relative;
   background-color: $color-gray-200;
+  background-image: url("../img/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  &::after {
+    @media (min-width: $tablet) {
+      position: absolute;
+      content: "";
+      background-image: url("../img/zigzag.svg");
+      height: 24px;
+      width: 100%;
+      bottom: -10px;
+      left: 0;
+      z-index: 999;
+
+
+      @media (min-width: $desktop) {
+        background-image: url("../img/zigzag-desktop.svg");
+        height: 34px;
+        bottom: -15px;
+      }
+    }
+  }
+}
+
+.hero__container {
+  max-width: 270px;
+  margin: 0 auto 120px auto;
+  padding-top: 90px;
+
+  @media (min-width: $tablet) {
+    min-width: 670px;
+    padding-top: 155px;
+    padding-bottom: 372px;
+  }
 }
 
 .hero__title {
   @include reset-heading;
-  @include text($font-sans, 27px, 30px, 700);
+  @include text($basic-black, 27px, 30px, 700);
   text-align: center;
-  color: $basic-black;
+
+  @media (min-width: $tablet) {
+    @include text($basic-black, 43px, 50px, 700);
+  }
+
+  @media (min-width: $desktop) {
+    @include text($basic-black, 53px, 57px, 700);
+  }
 }
