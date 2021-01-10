@@ -1,9 +1,20 @@
 .feedback {
-  position: relative;
   padding-bottom: 45px;
+  position: relative;
 
   @media (min-width: $tablet) {
-    padding-bottom: 85px;
+    background-image: url("../img/review.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 142px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/review@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop) {
+    background-image: none;
   }
 
   &::after {
@@ -27,16 +38,16 @@
       content: "";
       height: 23px;
       left: 50%;
-      transform: translateX(-50%);
-      position: absolute;
       max-width: 1050px;
+      position: absolute;
+      transform: translateX(-50%);
       z-index: 999;
     }
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 85px;
     margin-bottom: 67px;
+    padding-bottom: 165px;
   }
 }
 
@@ -49,6 +60,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 50px;
+    padding-top: 82px;
     position: relative;
   }
 
@@ -57,18 +69,38 @@
     margin: 58px auto 0 auto;
     max-width: 1050px;
     padding-left: 150px;
+
+    &::before {
+      background-image: url("../img/review.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      content: "";
+      height: 457px;
+      width: 350px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/review@2x.png");
+      }
+    }
   }
 }
 
 .feedback__buttons {
   display: flex;
-  margin-bottom: 38px;
 
   @media (min-width: $tablet) {
     bottom: 0;
     position: absolute;
     right: 0;
     width: 175px;
+  }
+
+  @media (min-width: $desktop) {
+
   }
 }
 

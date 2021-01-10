@@ -8,6 +8,22 @@
 
     @media (min-width: $tablet) {
       @include text($basic-black, 43px, 50px, 700);
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 47px;
+        height: 81px;
+        background-image: url("../img/flag.svg");
+        right: 0;
+        top: -20px;
+
+        @media (min-width: $desktop) {
+          top: -20px;
+          left: -100px;
+        }
+      }
     }
 
     @media (min-width: $desktop) {
