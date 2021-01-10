@@ -1,4 +1,4 @@
-.logo__mobile {
+/*.logo__mobile {
   display: block;
 
   @media (min-width: $tablet) {
@@ -30,6 +30,31 @@
   }
 
   &--active {
+    &:hover {
+      opacity: 60%;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:active {
+      opacity: 30%;
+      transition: all 0.1s ease-in-out;
+    }
+  }
+}*/
+
+.logo__image {
+  width: 86px;
+  height: 35px;
+
+  @media (min-width: $tablet) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 149px;
+    height: 72px;
+
     &:hover {
       opacity: 60%;
       transition: all 0.3s ease-in-out;

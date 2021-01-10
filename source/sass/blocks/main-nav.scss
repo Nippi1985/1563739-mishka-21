@@ -6,9 +6,11 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: flex-end;
+    width: 70%;
   }
 
   @media (min-width: $desktop) {
+    width: 100%;
     justify-content: flex-end;
     margin: 0 auto;
     max-width: 1050px;
