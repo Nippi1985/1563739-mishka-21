@@ -123,7 +123,11 @@
         </dl>
       </div>
       <div class="promo__image-wrapper">
-        <img class="promo__image" alt="Руки держащие три вязаные корзинки. Две серо-бирюзовые и одну бело-розовую" src="img/triple-set-mobile.jpg" height="315" width="260">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/triple-set-desktop.jpg">
+          <source media="(min-width: 768px)" srcset="img/triple-set-tablet.jpg">
+          <img class="promo__image" src="img/triple-set-mobile.jpg" height="315" width="260" alt="Руки держащие три вязаные корзинки. Две серо-бирюзовые и одну бело-розовую">
+        </picture>
       </div>
       <div class="promo__purchase">
         <span class="promo__price">Цена: 990 руб.</span>
