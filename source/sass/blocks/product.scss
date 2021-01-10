@@ -1,10 +1,10 @@
 .product {
   border: 1px solid $color-gray-100;
-  box-sizing: border-box;
   margin: 0 auto;
 
   @media (min-width: $tablet) {
     display: flex;
+    /*box-sizing: border-box;*/
     flex-wrap: nowrap;
     max-width: 668px;
   }
@@ -94,6 +94,7 @@
 }
 
 .product__link {
+  box-sizing: border-box;
   height: min-content;
   margin: 0;
   padding: 0;
