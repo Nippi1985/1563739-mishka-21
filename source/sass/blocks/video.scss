@@ -64,6 +64,8 @@
   }
 
   @media (min-width: $desktop) {
+    width: auto;
+    height: auto;
     grid-column-end: 2;
     grid-column-start: 1;
     grid-row-end: -1;
