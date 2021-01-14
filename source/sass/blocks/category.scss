@@ -31,7 +31,6 @@
   &--bright {
     @media (min-width: $tablet) {
       &:hover {
-        /*box-shadow: 0 -5px 0 $color-cyan-200;*/
         height: 124px;
         margin-top: -5px;
         transition: all 0.2s ease-in-out;
@@ -85,6 +84,7 @@
 }
 
 .category__svg {
+
   &--toy {
     padding: 21px 27px 0 0;
     opacity: 0.5;

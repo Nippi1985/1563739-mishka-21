@@ -51,20 +51,20 @@
     min-width: auto;
   }
 
-  &:hover .user-link__svg--cart path {
+  &:hover .user-list__svg--cart path {
     fill: $color-cyan-200;
     opacity: 1;
     transition: all 0.3s ease-in-out;
   }
 
-  &:active .user-link__svg--cart path {
+  &:active .user-list__svg--cart path {
     fill: $color-cyan-200;
     opacity: 0.3;
     transition: all 0.1s ease-in-out;
   }
 }
 
-.user-link__svg--cart {
+.user-list__svg--cart {
   position: absolute;
   top: 30px;
   left: 31px;
@@ -97,24 +97,25 @@
     width: 84px;
     box-shadow: 0 0 1px rgba($basic-black, 0.2), inset 0 0 1px rgba($basic-black, 0.2);
   }
-
-  &:hover .user-list__svg--search path {
-    fill: $color-cyan-200;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:active .user-list__svg--search path {
-    fill: $color-cyan-200;
-    opacity: 0.3;
-    transition: all 0.1s ease-in-out;
-  }
 }
 
 .user-list__svg--search {
   position: absolute;
   top: 30px;
   left: 31px;
+  opacity: 0.2;
+
+  .user-list__link--search:hover & {
+    fill: $color-cyan-200;
+    opacity: 1;
+    transition: all 0.3s ease-in;
+  }
+
+  .user-list__link--search:active & {
+    fill: $color-cyan-200;
+    opacity: 0.3;
+    transition: all 0.1s ease-in;
+  }
 
   @media (min-width: $tablet) {
     position: relative;
