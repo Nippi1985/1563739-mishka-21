@@ -80,4 +80,16 @@
       max-width: 230px;
     }
   }
+
+  &--modal {
+    display: block;
+    width: 260px;
+    margin: 0 auto;
+    cursor: pointer;
+    color: $basic-white;
+    background-color: $color-cyan-200;
+    border: none;
+    box-sizing: border-box;
+    min-height: 52px;
+  }
 }

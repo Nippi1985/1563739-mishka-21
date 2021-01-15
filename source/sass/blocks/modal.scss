@@ -1,0 +1,58 @@
+.modal__container {
+  width: 100%;
+  min-height: 336px;
+  box-sizing: border-box;
+}
+
+.modal__title {
+  @include text($basic-black, 25px, 30px, 700);
+  text-transform: uppercase;
+  max-width: 160px;
+  margin: 28px auto 14px auto;
+}
+
+.modal__text {
+  @include text($color-gray-500, 15px, 30px, 400);
+
+  display: block;
+  margin: 0 auto;
+  padding: 0 79px;
+}
+
+.modal__form {
+  box-sizing: border-box;
+  display: block;
+  margin: 22px auto 31px auto;
+  max-width: 260px;
+
+  @include outline(red);
+}
+
+.modal__list {
+  @include reset-list;
+
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 31px auto;
+}
+
+.modal__label {
+  @include text($color-gray-500, 17px, 16px, 700);
+
+  display: block;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 30;
+
+  &::before {
+    position: absolute;
+    box-sizing: border-box;
+    content: "";
+    background-color: $basic-white;
+    border: 2px solid $color-gray-500;
+    width: 82px;
+    height: 52px;
+    z-index: 20;
+  }
+}
+
