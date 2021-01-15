@@ -155,8 +155,9 @@
 .product__add-to-cart {
   display: flex;
   justify-content: flex-end;
+  opacity: 0.2;
 
-  &:hover path {
+  &:hover {
     fill: $color-cyan-200;
     opacity: 1;
     transition: all 0.3s ease-out;

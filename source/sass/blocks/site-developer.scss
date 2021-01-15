@@ -10,11 +10,13 @@
 }
 
 .site-developer__link {
-  &:hover .site-developer__svg path {
+  fill: $color-cyan-200;
+
+  &:hover .site-developer__svg {
     fill: $color-cyan-400;
   }
 
-  &:active .site-developer__svg path {
+  &:active .site-developer__svg {
     fill: rgba($color-cyan-400, 0.3);
   }
 }

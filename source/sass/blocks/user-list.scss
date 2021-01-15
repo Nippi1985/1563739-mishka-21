@@ -61,9 +61,14 @@
   .user-list__link--cart:hover & {
     fill: $color-cyan-200;
     opacity: 1;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in;
   }
 
+  .user-list__link--cart:active & {
+    fill: $color-cyan-200;
+    opacity: 0.3;
+    transition: all 0.1s ease-in;
+  }
 
   @media (min-width: $tablet) {
     position: relative;
