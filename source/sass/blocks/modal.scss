@@ -1,58 +1,158 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $basic-white;
+  z-index: 999;
+
+  &::after {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba($basic-white, 0.9);
+    opacity: 0.9;
+    z-index: 1;
+  }
+
+  @media (min-width: $tablet) {
+    width: 566px;
+  }
+}
+
 .modal__container {
+  background-color: $basic-white;
+  position: fixed;
+  left: 50%;
+  right: 50%;
+  box-sizing: border-box;
   width: 100%;
   min-height: 336px;
-  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet) {
+    width: 566px;
+  }
 }
 
 .modal__title {
   @include text($basic-black, 25px, 30px, 700);
-  text-transform: uppercase;
-  max-width: 160px;
+
+  display: block;
+  max-width: 260px;
   margin: 28px auto 14px auto;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 999;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 57px;
+    max-width: 100%;
+  }
+}
+
+.modal-br {
+  @media (min-width: $tablet) {
+    display: none;
+  }
 }
 
 .modal__text {
   @include text($color-gray-500, 15px, 30px, 400);
 
   display: block;
+  width: 260px;
   margin: 0 auto;
-  padding: 0 79px;
+  text-align: center;
+  z-index: 999;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
 }
 
 .modal__form {
-  box-sizing: border-box;
   display: block;
-  margin: 22px auto 31px auto;
+  box-sizing: border-box;
   max-width: 260px;
+  margin: 0 auto 31px auto;
 
-  @include outline(red);
+  @media (min-width: $tablet) {
+    max-width: 350px;
+  }
 }
 
 .modal__list {
   @include reset-list;
 
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
   margin: 0 auto 31px auto;
+}
+
+.modal__item:nth-child(3n) > .modal__label {
+  margin-right: 0;
 }
 
 .modal__label {
   @include text($color-gray-500, 17px, 16px, 700);
 
-  display: block;
-  text-transform: uppercase;
   position: relative;
   z-index: 30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 82px;
+  height: 52px;
+  margin-top: 22px;
+  margin-right: 7px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 112px;
+  }
 
   &::before {
-    position: absolute;
-    box-sizing: border-box;
     content: "";
-    background-color: $basic-white;
-    border: 2px solid $color-gray-500;
+    position: absolute;
+    z-index: 20;
+    box-sizing: border-box;
     width: 82px;
     height: 52px;
-    z-index: 20;
+    border: 2px solid $color-gray-500;
+    cursor: pointer;
+    opacity: 0.1;
+
+    @media (min-width: $tablet) {
+      width: 112px;
+    }
   }
+}
+
+.modal__input:hover + .modal__label::before {
+  opacity: 0.3;
+  transition: all 0.3s ease-out;
+}
+
+.modal__input:checked + .modal__label::before {
+  border: 2px solid $color-cyan-200;
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}
+
+.modal-show {
+  display: block;
 }
 

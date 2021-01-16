@@ -15,8 +15,8 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 50px;
     height: 143px;
+    margin: 0 50px;
   }
 
   @media (min-width: $desktop) {
@@ -35,12 +35,12 @@
 
 .page-footer__link {
   &:hover .page-footer__svg {
-    fill: $color-cyan-400;
     transition: all 0.3s ease-in-out;
+    fill: $color-cyan-400;
   }
 
   &:active .page-footer__svg {
-    fill: rgba($color-cyan-400, 0.3);
     transition: all 0.1s ease-in-out;
+    fill: rgba($color-cyan-400, 0.3);
   }
 }

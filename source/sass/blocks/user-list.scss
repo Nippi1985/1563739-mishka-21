@@ -59,23 +59,23 @@
   opacity: 0.2;
 
   .user-list__link--cart:hover & {
-    fill: $color-cyan-200;
     opacity: 1;
     transition: all 0.3s ease-in;
+    fill: $color-cyan-200;
   }
 
   .user-list__link--cart:active & {
-    fill: $color-cyan-200;
     opacity: 0.3;
     transition: all 0.1s ease-in;
+    fill: $color-cyan-200;
   }
 
   @media (min-width: $tablet) {
     position: relative;
     top: 0;
     left: 0;
-    padding-left: 31px;
     padding-right: 30px;
+    padding-left: 31px;
   }
 }
 
@@ -107,15 +107,15 @@
   opacity: 0.2;
 
   .user-list__link--search:hover & {
-    fill: $color-cyan-200;
     opacity: 1;
     transition: all 0.3s ease-in;
+    fill: $color-cyan-200;
   }
 
   .user-list__link--search:active & {
-    fill: $color-cyan-200;
     opacity: 0.3;
     transition: all 0.1s ease-in;
+    fill: $color-cyan-200;
   }
 
   @media (min-width: $tablet) {

@@ -1,18 +1,18 @@
 .product {
-  border: 1px solid $color-gray-100;
   margin: 0 auto;
+  border: 1px solid $color-gray-100;
 
   @media (min-width: $tablet) {
     display: flex;
-    box-sizing: border-box;
     flex-wrap: nowrap;
+    box-sizing: border-box;
     max-width: 668px;
   }
 
   @media (min-width: $desktop) {
     flex-direction: column;
-    min-height: 659px;
     width: 316px;
+    min-height: 659px;
   }
 
   &:hover .product__block {
@@ -29,8 +29,8 @@
   width: 100%;
 
   @media (min-width: $tablet) {
-    min-height: 334px;
     width: 334px;
+    min-height: 334px;
   }
 
   @media (min-width: $desktop) {
@@ -53,14 +53,14 @@
   position: relative;
 
   &::before {
-    background-color: $color-gray-100;
-    background-repeat: no-repeat;
     content: "";
-    height: 1px;
-    left: 0;
     position: absolute;
     top: -22px;
+    left: 0;
     width: 204px;
+    height: 1px;
+    background-color: $color-gray-100;
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet) {
       top: -23px;
@@ -74,22 +74,22 @@
 }
 
 .product__block {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
   padding: 0 28px 0 28px;
 
   @media (min-width: $tablet) {
     flex-direction: column;
-    padding: 0 33px 0 33px;
     width: 334px;
+    padding: 0 33px 0 33px;
   }
 
   @media (min-width: $desktop) {
-    min-height: 197px;
     justify-content: flex-start;
-    padding: 0 28px 0 28px;
     width: 316px;
+    min-height: 197px;
+    padding: 0 28px 0 28px;
   }
 }
 
@@ -106,8 +106,8 @@
   margin-top: 27px;
 
   @media (min-width: $tablet) {
-    font-size: 20px;
     margin-bottom: 10px;
+    font-size: 20px;
   }
 
   &:hover,
@@ -123,8 +123,8 @@
 .product__info {
   @include reset-text;
   @include text($color-gray-500, 13px, 30px, 400);
-  margin-bottom: 40px;
   width: 100%;
+  margin-bottom: 40px;
 
   @media (min-width: $tablet) {
     font-size: 15px;
@@ -138,8 +138,8 @@
 .product__price-block {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 26px;
   width: 100%;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet) {
     display: flex;
@@ -158,15 +158,15 @@
   opacity: 0.2;
 
   &:hover {
-    fill: $color-cyan-200;
     opacity: 1;
     transition: all 0.3s ease-out;
+    fill: $color-cyan-200;
   }
 
   &:active,
   &:focus {
-    fill: $color-cyan-200;
     opacity: 0.3;
     transition: all 0.1s ease-out;
+    fill: $color-cyan-200;
   }
 }

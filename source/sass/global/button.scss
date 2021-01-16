@@ -2,19 +2,19 @@
   @include text($color-gray-500, 17px, 20px, 700);
 
   &--decor {
-    background-color: $basic-white;
-    border: 2px solid $color-gray-500;
-    box-sizing: border-box;
     display: block;
-    padding-bottom: 14px;
+    box-sizing: border-box;
     padding-top: 14px;
+    padding-bottom: 14px;
     text-align: center;
     text-transform: uppercase;
+    background-color: $basic-white;
+    border: 2px solid $color-gray-500;
   }
 
   &:hover {
-    background-color: $color-gray-500;
     color: $basic-white;
+    background-color: $color-gray-500;
     transition: all 0.4s ease-in-out;
   }
 
@@ -32,14 +32,14 @@
   }
 
   &--feedback {
-    margin-top: 38px;
     min-width: 260px;
+    margin-top: 38px;
 
     @media (min-width: $tablet) {
+      order: 1;
+      min-width: 175px;
       height: min-content;
       margin-top: 0;
-      min-width: 175px;
-      order: 1;
     }
   }
 
@@ -47,24 +47,24 @@
     margin: 0 30px;
 
     @media (min-width: $tablet) {
-      margin: 0 auto;
       width: 230px;
+      margin: 0 auto;
     }
 
     @media (min-width: $desktop) {
+      height: 52px;
+      margin-left: 150px;
       grid-column-end: 2;
       grid-column-start: 1;
       grid-row-end: 4;
       grid-row-start: 3;
-      height: 52px;
-      margin-left: 150px;
     }
   }
 
   &--order {
-    cursor: pointer;
-    min-height: 52px;
     width: 100%;
+    min-height: 52px;
+    cursor: pointer;
 
     @media (min-width: $tablet) {
       width: 230px;
@@ -83,13 +83,31 @@
 
   &--modal {
     display: block;
+    box-sizing: border-box;
     width: 260px;
+    min-height: 52px;
     margin: 0 auto;
-    cursor: pointer;
     color: $basic-white;
+    text-transform: uppercase;
     background-color: $color-cyan-200;
     border: none;
-    box-sizing: border-box;
-    min-height: 52px;
+    cursor: pointer;
+    z-index: 999;
+
+    &:hover {
+      background-color: $color-cyan-400;
+      border: none;
+      outline: none;
+    }
+
+    &:active {
+      background-color: $color-cyan-100;
+      border: none;
+      outline: none;
+    }
+
+    @media (min-width: $tablet) {
+      width: 350px;
+    }
   }
 }

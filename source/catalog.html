@@ -231,5 +231,28 @@
     </div>
   </div>
 </footer>
+<section class="modal">
+  <div class="modal__container">
+    <h2 class="modal__title">Добавить <!--<br class="modal-br">-->в&nbsp;корзину</h2>
+    <span class="modal__text">Выберите размер:</span>
+    <form class="modal__form" method="get" action="http://echo.htmlacademy.ru">
+      <ol class="modal__list">
+        <li class="modal__item">
+          <input class="visually-hidden modal__input" type="radio" name="order-size" id="s" value="S" checked>
+          <label class="modal__label" for="s">s</label>
+        </li>
+        <li class="modal__item">
+          <input class="visually-hidden modal__input" type="radio" name="order-size" id="m" value="M">
+          <label class="modal__label" for="m">m</label>
+        </li>
+        <li class="modal__item">
+          <input class="visually-hidden modal__input" type="radio" name="order-size" id="l" value="L">
+          <label class="modal__label" for="l">l</label>
+        </li>
+      </ol>
+      <button class="button button--modal" type="submit">Добавить</button>
+    </form>
+  </div>
+</section>
 </body>
 </html>
