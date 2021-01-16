@@ -93,6 +93,7 @@
 .knitting-type__checkbox + .knitting-type__label--checkbox-label {
   @include text($basic-black, 17px, 18px, 700);
   position: relative;
+  box-sizing: border-box;
   display: block;
   margin: 43px 0;
   cursor: pointer;

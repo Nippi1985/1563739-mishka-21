@@ -92,8 +92,8 @@
               <li class="knitting-type__item knitting-type__item--color">
                 <input class="knitting-type__checkbox visually-hidden" type="checkbox" name="knitting-color" value="white" id="white" checked>
                 <label class="knitting-type__label knitting-type__label--checkbox-label" for="white">
-                  <svg class="knitting-type__svg" width="24" height="17" viewBox="0 0 24 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M23.963 1.68385L22.9687 0.692322L8.76555 14.7862L1.73497 7.77467L0.740742 8.76619L7.77132 15.7777L8.76555 16.7692L9.83079 15.7777L23.963 1.68385Z" fill="black"/>
+                  <svg class="knitting-type__svg" width="24" height="17">
+                    <use xlink:href="img/icons/sprite.svg#tick"></use>
                   </svg>
                   Белый</label>
               </li>
@@ -165,11 +165,17 @@
             <ul class="order-form__list order-contacts">
               <li class="order-contacts__item">
                 <label class="order-contacts__label" for="phone">Тел</label>
-                <input class="order-contacts__input order-contacts__input--icon-phone order-contacts__input--number" type="number" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" id="phone" autocomplete="disabled" required>
+                <input class="order-contacts__input order-contacts__input--icon-phone order-contacts__input--number" type="tel" pattern="[+][0-9]{12}" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="phone" id="phone" autocomplete="disabled" required>
+                <svg  class="order-contacts__svg" width="25" height="24">
+                  <use xlink:href="img/icons/sprite.svg#phone"></use>
+                </svg>
               </li>
-              <li class="order-contacts__item">
+              <li class="order-contacts__item order-contacts__item--phone">
                 <label class="order-contacts__label" for="email">E-mail</label>
                 <input class="order-contacts__input order-contacts__input--icon-mail" type="email" placeholder="Ваш Email*" name="email" id="email" autocomplete="disabled" required>
+                <svg  class="order-contacts__svg" width="32" height="21">
+                  <use xlink:href="img/icons/sprite.svg#mail"></use>
+                </svg>
               </li>
             </ul>
           </fieldset>
