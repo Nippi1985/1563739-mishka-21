@@ -53,6 +53,18 @@
     background-color: $basic-white;
     padding: 33px 35px 31px 0;
   }
+
+  &--catalog {
+    @media (min-width: $desktop) {
+      border-right: 1px solid #f1f1f1;
+    }
+  }
+
+  &--knitting {
+    @media (min-width: $desktop) {
+      padding-left: 30px;
+    }
+  }
 }
 
 .site-list__link--arrivals {
@@ -72,6 +84,7 @@
   display: none;
 
   @media (min-width: $desktop) {
+    padding-left: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
     display: block;
@@ -82,7 +95,9 @@
 }
 
 .site-list__item {
+  box-sizing: border-box;
+
   @media (min-width: $desktop) {
-    min-width: 235px;
+    /*min-width: 235px;*/
   }
 }

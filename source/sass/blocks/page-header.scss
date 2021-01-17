@@ -1,10 +1,13 @@
 .page-header {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.page-header__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 79px;
-  box-shadow: 0 1px 0 $color-gray-100, inset 0 1px 0 $color-gray-100;
 
   @media (min-width: $tablet) {
     flex-direction: row;
