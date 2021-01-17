@@ -95,7 +95,8 @@
   position: relative;
   box-sizing: border-box;
   display: block;
-  margin: 43px 0;
+  margin: 23px 0;
+  padding: 20px 0;
   cursor: pointer;
   user-select: none;
 
@@ -110,6 +111,7 @@
     background-color: transparent;
     border: 2px solid $color-gray-500;
     transform: translateY(-50%);
+    padding-right: -20px;
 
     @media (min-width: $tablet) {
       width: 52px;
