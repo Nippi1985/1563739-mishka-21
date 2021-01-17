@@ -93,8 +93,8 @@
 .knitting-type__checkbox + .knitting-type__label--checkbox-label {
   @include text($basic-black, 17px, 18px, 700);
   position: relative;
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
   margin: 23px 0;
   padding: 20px 0;
   cursor: pointer;
@@ -108,10 +108,10 @@
     box-sizing: border-box;
     width: 38px;
     height: 38px;
+    padding-right: -20px;
     background-color: transparent;
     border: 2px solid $color-gray-500;
     transform: translateY(-50%);
-    padding-right: -20px;
 
     @media (min-width: $tablet) {
       width: 52px;

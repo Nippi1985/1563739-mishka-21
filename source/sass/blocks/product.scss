@@ -25,9 +25,9 @@
 }
 
 .product__image-block {
-  object-fit: cover;
   box-sizing: border-box;
   width: 100%;
+  object-fit: cover;
 
   @media (min-width: $tablet) {
     min-height: 334px;
@@ -40,8 +40,8 @@
 }
 
 .product__image {
-  width: 100%;
   display: block;
+  width: 100%;
 
   @media (min-width: $tablet) {
     width: 100%;
@@ -82,8 +82,8 @@
 
   @media (min-width: $tablet) {
     flex-direction: column;
-    padding: 0 33px 0 33px;
     min-width: 332px;
+    padding: 0 33px 0 33px;
   }
 
   @media (min-width: $desktop) {
