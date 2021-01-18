@@ -1,5 +1,5 @@
 .site-list {
-  display: flex; /* меняем через JS на display: flex/none для отображения */
+  display: none; /* меняем через JS на display: flex/none для отображения */
   flex-direction: column;
 
   @media (min-width: $tablet) {
