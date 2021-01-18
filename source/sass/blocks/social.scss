@@ -9,36 +9,36 @@
 }
 
 .social__link--insta {
-  &:hover .social__svg--insta path {
+  &:hover .social__svg--insta {
     fill: $color-cyan-400;
     transition: all 0.3s ease-in-out;
   }
 
-  &:active .social__svg--insta path {
+  &:active .social__svg--insta {
     fill: rgba($color-cyan-400, 0.3);
     transition: all 0.1s ease-in-out;
   }
 }
 
 .social__link--fb {
-  &:hover .social__svg--fb path {
+  &:hover .social__svg--fb {
     fill: $color-cyan-400;
     transition: all 0.3s ease-in-out;
   }
 
-  &:active .social__svg--fb path {
+  &:active .social__svg--fb {
     fill: rgba($color-cyan-400, 0.3);
     transition: all 0.1s ease-in-out;
   }
 }
 
 .social__link--twitter {
-  &:hover .social__svg--twitter path {
+  &:hover .social__svg--twitter {
     fill: $color-cyan-400;
     transition: all 0.3s ease-in-out;
   }
 
-  &:active .social__svg--twitter path {
+  &:active .social__svg--twitter {
     fill: rgba($color-cyan-400, 0.3);
     transition: all 0.1s ease-in-out;
   }

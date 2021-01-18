@@ -3,24 +3,24 @@
   flex-direction: column;
 
   @media (min-width: $tablet) {
-    display: flex;
     position: absolute;
     top: 100px;
     left: 50px;
-    flex-direction: row;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    max-width: 370px;
     z-index: 30;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 370px;
   }
 
   @media (min-width: $desktop) {
-    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 470px;
     flex-wrap: wrap;
+    align-items: center;
+    max-width: 470px;
   }
 }
 
@@ -43,15 +43,27 @@
 
   @media (min-width: $tablet) {
     @include text($basic-black, 15px, 24px, 700);
-    background-color: transparent;
     padding: 10px 19px 10px 0;
+    background-color: transparent;
     box-shadow: none;
   }
 
   @media (min-width: $desktop) {
     @include text($basic-black, 17px, 24px, 700);
-    background-color: $basic-white;
     padding: 33px 35px 31px 0;
+    background-color: $basic-white;
+  }
+
+  &--catalog {
+    @media (min-width: $desktop) {
+      border-right: 1px solid #f1f1f1;
+    }
+  }
+
+  &--knitting {
+    @media (min-width: $desktop) {
+      padding-left: 30px;
+    }
   }
 }
 
@@ -59,9 +71,9 @@
   display: none;
 
   @media (min-width: $desktop) {
+    display: block;
     padding-top: 20px;
     padding-bottom: 20px;
-    display: block;
     background-color: transparent;
 
     @include text($basic-black, 15px, 24px, 700);
@@ -72,9 +84,10 @@
   display: none;
 
   @media (min-width: $desktop) {
+    display: block;
     padding-top: 20px;
     padding-bottom: 20px;
-    display: block;
+    padding-left: 20px;
     background-color: transparent;
 
     @include text($basic-black, 15px, 24px, 700);
@@ -82,7 +95,9 @@
 }
 
 .site-list__item {
+  box-sizing: border-box;
+
   @media (min-width: $desktop) {
-    min-width: 235px;
+    /*min-width: 235px;*/
   }
 }

@@ -1,33 +1,6 @@
-.logo__mobile {
-  display: block;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
-}
-
-.logo__tablet {
-  display: none;
-
-  @media (min-width: $tablet) {
-    display: block;
-  }
-
-  @media (min-width: $desktop) {
-    display: none;
-  }
-}
-
-.logo__desktop {
-  display: none;
-
-  @media (min-width: $tablet) {
-    display: none;
-  }
-
-  @media (min-width: $desktop) {
-    display: block;
-  }
+.logo__image {
+  width: 86px;
+  height: 35px;
 
   &--active {
     &:hover {
@@ -39,5 +12,15 @@
       opacity: 30%;
       transition: all 0.1s ease-in-out;
     }
+  }
+
+  @media (min-width: $tablet) {
+    width: 114px;
+    height: 46px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 149px;
+    height: 72px;
   }
 }

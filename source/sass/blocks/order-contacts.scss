@@ -5,6 +5,7 @@
 }
 
 .order-contacts__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -13,6 +14,13 @@
   @media (min-width: $tablet) {
     flex-wrap: nowrap;
   }
+}
+
+.order-contacts__svg {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  fill: rgba($basic-black, 0.2);
 }
 
 .order-contacts__label {
@@ -81,20 +89,26 @@
   }
 }
 
+.order-contacts__input:hover + .order-contacts__svg,
+.order-contacts__input:active + .order-contacts__svg,
+.order-contacts__input:focus + .order-contacts__svg {
+  fill: $color-cyan-200;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+
+/*
 .order-contacts__input::-webkit-outer-spin-button,
 .order-contacts__input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
+*/
 
-/*.order-contacts__input[type="number"] {
-  appearance: textfield;
-}*/
-
-.order-contacts__input:-webkit-autofill {
+/*.order-contacts__input:-webkit-autofill {
   box-shadow: inset 0 0 0 50px $basic-white;
 
   @media (min-width: $tablet) {
     box-shadow: inset 0 0 0 50px $color-gray-200;
   }
-}
+}*/

@@ -35,46 +35,62 @@
     height: 89px;
     padding: 0;
   }
+
+  &--cart {
+    position: relative;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      min-width: 317px;
+      box-shadow: none;
+    }
+
+    @media (min-width: $desktop) {
+      min-width: auto;
+    }
+  }
+
+  &--search {
+    position: relative;
+
+    @media (min-width: $tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 84px;
+      border-right: 1px solid #f1f1f1;
+      border-left: 1px solid #f1f1f1;
+      box-shadow: none;
+    }
+  }
 }
 
-.user-list__link--cart {
-  position: relative;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    min-width: 317px;
-  }
-
-  @media (min-width: $desktop) {
-    min-width: auto;
-  }
-
-  &:hover .user-link__svg--cart path {
-    fill: $color-cyan-200;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:active .user-link__svg--cart path {
-    fill: $color-cyan-200;
-    opacity: 0.3;
-    transition: all 0.1s ease-in-out;
-  }
-}
-
-.user-link__svg--cart {
+.user-list__svg--cart {
   position: absolute;
   top: 30px;
   left: 31px;
+  opacity: 0.2;
+
+  .user-list__link--cart:hover & {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+    fill: $color-cyan-200;
+  }
+
+  .user-list__link--cart:active & {
+    opacity: 0.3;
+    transition: all 0.1s ease-in;
+    fill: $color-cyan-200;
+  }
 
   @media (min-width: $tablet) {
     position: relative;
     top: 0;
     left: 0;
-    padding-left: 31px;
     padding-right: 30px;
+    padding-left: 31px;
   }
 }
 
@@ -87,34 +103,23 @@
   }
 }
 
-.user-list__link--search {
-  position: relative;
-
-  @media (min-width: $tablet) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 84px;
-    box-shadow: 0 0 1px rgba($basic-black, 0.2), inset 0 0 1px rgba($basic-black, 0.2);
-  }
-
-  &:hover .user-list__svg--search path {
-    fill: $color-cyan-200;
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
-  }
-
-  &:active .user-list__svg--search path {
-    fill: $color-cyan-200;
-    opacity: 0.3;
-    transition: all 0.1s ease-in-out;
-  }
-}
-
 .user-list__svg--search {
   position: absolute;
   top: 30px;
   left: 31px;
+  opacity: 0.2;
+
+  .user-list__link--search:hover & {
+    opacity: 1;
+    transition: all 0.3s ease-in;
+    fill: $color-cyan-200;
+  }
+
+  .user-list__link--search:active & {
+    opacity: 0.3;
+    transition: all 0.1s ease-in;
+    fill: $color-cyan-200;
+  }
 
   @media (min-width: $tablet) {
     position: relative;

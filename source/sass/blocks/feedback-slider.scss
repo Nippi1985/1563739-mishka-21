@@ -17,15 +17,24 @@
 
 .feedback-slider__blockquote {
   @include text($color-gray-500, 15px, 30px, 400);
-  margin: 0;
+  margin: 20px 0 0 0;
 
   @media (min-width: $tablet) {
     font-size: 17px;
+    margin-bottom: 46px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 810px;
   }
 }
 
 .feedback-slider__author {
+  margin-top: 31px;
+  margin-bottom: 30px;
+
   @media (min-width: $tablet) {
+    margin: 0;
     order: 3;
     width: 50%;
   }
@@ -33,7 +42,6 @@
 
 .feedback-slider__cite {
   display: block;
-  margin-top: 33px;
 
   @include text($basic-black, 17px, 24px, 700);
   font-style: normal;
@@ -47,5 +55,4 @@
   display: block;
 
   @include text($color-gray-500, 17px, 30px, 400);
-  margin-bottom: 30px;
 }

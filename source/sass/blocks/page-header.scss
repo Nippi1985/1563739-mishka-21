@@ -1,20 +1,23 @@
 .page-header {
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.page-header__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 79px;
-  box-shadow: 0 1px 0 $color-gray-100, inset 0 1px 0 $color-gray-100;
 
   @media (min-width: $tablet) {
     flex-direction: row;
-    height: 89px;
     justify-content: flex-end;
+    height: 89px;
   }
 
   @media (min-width: $desktop) {
-    margin: 0 auto;
     max-width: 1050px;
+    margin: 0 auto;
   }
 }
 
@@ -28,18 +31,19 @@
   @media (min-width: $tablet) {
     width: 114px;
     height: 89px;
-    margin-left: 50px;
     margin-right: auto;
+    margin-left: 50px;
   }
 
   @media (min-width: $desktop) {
-    max-width: 1050px;
     position: absolute;
-    top: 5px;
-    left: 0;
+    top: 10px;
     right: 0;
-    margin: 0 auto;
+    left: 0;
     z-index: 999;
+    width: 149px;
+    height: 72px;
+    margin: 0 auto;
   }
 }
 

@@ -6,28 +6,67 @@
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: flex-end;
+    width: 70%;
   }
 
   @media (min-width: $desktop) {
     justify-content: flex-end;
-    margin: 0 auto;
+    width: 100%;
     max-width: 1050px;
+    margin: 0 auto;
   }
 }
 
 .main-nav__toggle {
-  background-color: transparent;
-  background-image: url("../../img/menu.svg");
-  border: 0;
-  cursor: pointer;
-  height: 14px;
   position: absolute;
-  right: 31px;
-  top: 32px;
-  width: 20px;
+  top: 20px;
+  right: 21px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    width: 20px;
+    height: 2px;
+    background-color: $color-gray-250;
+    box-shadow: 0 6px 0 0 $color-gray-250, 0 12px 0 0 $color-gray-250;
+  }
 
   @media (min-width: $tablet) {
     display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  top: 20px;
+  right: 21px;
+  width: 30px;
+  height: 30px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 26px;
+    height: 2px;
+    top: 14px;
+    left: 2px;
+    background-color: $color-gray-250;
+    box-shadow: none;
+  }
+
+  &::before {
+    transform: rotate(-45deg);
+  }
+
+  &::after {
+    transform: rotate(45deg);
   }
 }
 
