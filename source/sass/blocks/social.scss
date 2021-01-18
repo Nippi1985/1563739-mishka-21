@@ -1,7 +1,16 @@
+.social {
+  padding-top: 25px;
+  margin-bottom: 32px;
+
+  @media (min-width: $tablet) {
+    padding-top: 28px;
+  }
+}
+
 .social__list {
   @include reset-list;
   display: flex;
-  margin-top: 25px;
+  align-items: center;
 }
 
 .social__item {

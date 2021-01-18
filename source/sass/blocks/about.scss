@@ -1,13 +1,9 @@
-.about {
-  margin-bottom: 90px;
-}
-
 .about__container {
   min-width: 260px;
   margin: 31px 30px 58px 30px;
 
   @media (min-width: $tablet) {
-    margin: 0 50px;
+    margin: 0 50px 137px 50px;
   }
 
   @media (min-width: $desktop) {

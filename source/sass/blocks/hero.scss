@@ -3,6 +3,7 @@
   background-image: url("../img/hero-mobile.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
+  background-position-y: -18px;
   background-size: 320px;
   position: relative;
 
@@ -21,7 +22,11 @@
   }
 
   @media (min-width: $desktop) {
-    background-size: contain;
+    background-position-y: 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+    }
   }
 
   &::after {
@@ -49,16 +54,16 @@
   margin: 0 auto;
   max-width: 270px;
   padding-bottom: 120px;
-  padding-top: 90px;
+  padding-top: 72px;
 
   @media (min-width: $tablet) {
-    min-width: 670px;
+    min-width: 668px;
     padding-bottom: 371px;
     padding-top: 155px;
   }
 
   @media (min-width: $desktop) {
-    padding-bottom: 400px;
+    padding-bottom: 357px;
   }
 }
 
