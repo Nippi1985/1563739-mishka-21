@@ -41,6 +41,10 @@
   &--giftbox {
     order: 5;
   }
+
+  @media (min-width: $desktop) {
+    width: 40%;
+  }
 }
 
 .advantages__text {

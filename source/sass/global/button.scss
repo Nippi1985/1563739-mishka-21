@@ -31,6 +31,11 @@
       margin: 0;
       min-width: 292px;
     }
+
+    @media (min-width: $desktop) {
+      min-width: auto;
+      max-width: 292px;
+    }
   }
 
   &--feedback {
@@ -42,6 +47,10 @@
       height: min-content;
       margin-top: -4px;
       font-size: 17px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 1px;
     }
   }
 
@@ -56,11 +65,13 @@
 
     @media (min-width: $desktop) {
       height: 52px;
-      margin-left: 150px;
+      margin-left: 175px;
       grid-column-end: 2;
       grid-column-start: 1;
       grid-row-end: 4;
       grid-row-start: 3;
+      margin-top: 84px;
+      margin-bottom: 4px;
     }
   }
 

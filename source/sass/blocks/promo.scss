@@ -47,6 +47,7 @@
 
   @media (min-width: $desktop) {
     box-sizing: border-box;
+    column-gap: 58px;
     grid-template-columns: 1fr 525px;
     margin: 70px auto 0 auto;
     max-width: 1050px;
@@ -84,6 +85,12 @@
     margin-bottom: 35px;
     margin-top: -10px;
     padding: 0;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 4px;
+    margin-bottom: 50px;
+    max-width: 300px;
   }
 }
 

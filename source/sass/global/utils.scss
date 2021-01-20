@@ -3,8 +3,8 @@
   @include text($basic-black, 25px, 30px, 700);
 
   &--contacts {
-    font-size: 18px;
     margin-bottom: 14px;
+    font-size: 18px;
 
     @media (min-width: $tablet) {
       @include text($basic-black, 43px, 50px, 700);
@@ -14,22 +14,22 @@
       &::after {
         content: "";
         position: absolute;
+        top: -20px;
+        right: 3px;
         width: 47px;
         height: 81px;
         background-image: url("../img/flag.svg");
-        right: 3px;
-        top: -20px;
 
         @media (min-width: $desktop) {
-          top: -20px;
-          left: -100px;
+          top: -17px;
+          left: -112px;
         }
       }
     }
 
     @media (min-width: $desktop) {
       @include text($basic-black, 53px, 57px, 700);
-      margin-bottom: 34px;
+      margin-bottom: 36px;
     }
   }
 
@@ -40,25 +40,25 @@
     margin-bottom: 5px;
 
     @media (min-width: $tablet) {
-      grid-column-start: 1;
-      grid-column-end: 3;
-      margin-bottom: 49px;
-      margin-top: 51px;
-
-      @include text($basic-black, 43px, 50px, 700);
       flex-direction: row;
       justify-content: space-between;
+      margin-top: 51px;
+      margin-bottom: 49px;
+
+      @include text($basic-black, 43px, 50px, 700);
+      grid-column-start: 1;
+      grid-column-end: 3;
     }
 
     @media (min-width: $desktop) {
       @include text($basic-black, 53px, 57px, 700);
+      position: relative;
+      z-index: 999;
+      margin-top: 61px;
+      margin-bottom: 29px;
       grid-row-start: 1;
       grid-row-end: 2;
       grid-column-end: 3;
-      position: relative;
-      margin-top: 61px;
-      margin-bottom: 39px;
-      z-index: 999;
     }
   }
 
@@ -79,14 +79,15 @@
 
     @media (min-width: $tablet) {
       order: 0;
-      margin-bottom: 39px;
+      width: 70%;
 
       @include text($basic-black, 43px, 50px, 700);
-      width: 70%;
+      margin-bottom: 39px;
     }
 
     @media (min-width: $desktop) {
       @include text($basic-black, 53px, 57px, 700);
+      margin-bottom: 36px;
     }
   }
 }
