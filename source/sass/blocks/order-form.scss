@@ -1,6 +1,11 @@
 .order-form__group {
   @include reset-fieldset;
   overflow: hidden;
+  padding: 0;
+
+  &--type {
+    margin-bottom: 5px;
+  }
 
   @media (min-width: $tablet) {
     display: flex;
@@ -23,12 +28,12 @@
 }
 
 .order-form__legend {
+  @include reset-fieldset;
   @include text($color-cyan-200, 17px, 16px, 700);
   position: relative;
   display: block;
   min-width: 60px;
-  margin-top: 12px;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   padding: 0;
   overflow: hidden;
   text-transform: uppercase;
@@ -48,16 +53,20 @@
     }
   }
 
+  &--name {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet) {
+      margin-top: 26px;
+    }
+  }
+
   @media (min-width: $tablet) {
     margin-top: 63px;
     margin-right: 100px;
 
     &--color {
       margin-top: 44px;
-    }
-
-    &--name {
-      margin-top: 26px;
     }
   }
 }
@@ -101,8 +110,8 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 17px;
-  padding: 17px 17px;
+  margin-bottom: 15px;
+  padding: 16px;
   border: 2px solid $basic-black;
   outline: none;
   resize: none;
@@ -125,6 +134,7 @@
   }
 
   &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
     font-weight: 400;
     font-size: 17px;
     line-height: 18px;

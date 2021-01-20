@@ -8,16 +8,20 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 21px;
 
   @media (min-width: $tablet) {
     flex-wrap: nowrap;
   }
 }
 
+.order-user__item:last-child {
+  margin-bottom: 0;
+}
+
 .order-user__label {
   @include text($basic-black, 17px, 18px, 700);
   margin-bottom: 17px;
-  margin-top: 22px;
   width: 100%;
 
   @media (min-width: $tablet) {
@@ -35,7 +39,7 @@
   box-sizing: border-box;
   outline: none;
   padding: 0;
-  padding-bottom: 17px;
+  padding-bottom: 15px;
   width: 100%;
 
   @media (min-width: $tablet) {
@@ -54,6 +58,7 @@
   }
 
   &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
     color: rgba($basic-black, 0.3%);
     font-size: 17px;
     font-weight: 400;
