@@ -18,6 +18,7 @@
 
   @media (min-width: $tablet) {
     flex-wrap: nowrap;
+    margin-bottom: 41px;
   }
 }
 
@@ -27,9 +28,19 @@
   top: 31px;
   fill: rgba($basic-black, 0.2);
 
+  @media (min-width: $tablet) {
+    right: 26px;
+    top: -5px;
+  }
+
   &--mail {
     right: 3px;
     top: 36px;
+
+    @media (min-width: $tablet) {
+      top: 0;
+      right: 22px;
+    }
   }
 }
 
@@ -44,7 +55,7 @@
 
   @media (min-width: $tablet) {
     min-width: 60px;
-    max-width: 160px;
+    max-width: 170px;
   }
 
   &::before {
@@ -75,9 +86,9 @@
   background-color: transparent;
 
   @media (min-width: $tablet) {
-    margin-top: 31px;
+    margin-top: 0;
     width: 100%;
-    padding-left: 17px;
+    padding-left: 14px;
   }
 
   &:hover {
@@ -93,7 +104,7 @@
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     color: rgba($basic-black, 0.3%);
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 400;
     line-height: 18px;
   }
