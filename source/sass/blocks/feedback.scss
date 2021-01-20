@@ -1,0 +1,96 @@
+.feedback {
+  position: relative;
+
+  &::after {
+    background-image: url("../img/zigzag-line-mob.svg");
+    bottom: 0;
+    content: "";
+    height: 6px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+
+    @media (min-width: $tablet) {
+      background-image: url("../img/zigzag-line-tablet.svg");
+      height: 17px;
+    }
+
+    @media (min-width: $desktop) {
+      background-image: url("../img/zigzag-line-desktop.svg");
+      bottom: 0;
+      content: "";
+      height: 23px;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      max-width: 1050px;
+      z-index: 999;
+    }
+  }
+}
+
+.feedback__container {
+  margin: 0 30px;
+  min-width: 260px;
+  padding-bottom: 51px;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 50px;
+    position: relative;
+    padding-bottom: 104px;
+  }
+
+  @media (min-width: $desktop) {
+    box-sizing: border-box;
+    margin: 138px 50px 70px 74px;
+    max-width: 1050px;
+    padding-left: 150px;
+    padding-bottom: 156px;
+  }
+}
+
+.feedback__buttons {
+  display: flex;
+  margin-bottom: 38px;
+
+  @media (min-width: $tablet) {
+    bottom: 95px;
+    position: absolute;
+    right: 0;
+    width: 175px;
+  }
+
+  @media (min-width: $desktop) {
+    bottom: 149px;
+  }
+}
+
+.change-quote {
+  background-color: $basic-white;
+  border: 1px solid $color-gray-100;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 52px;
+  outline: none;
+  width: 50%;
+
+  @media (min-width: $tablet) {
+    border: none;
+  }
+
+  &--next svg {
+    transform: rotate(180deg);
+  }
+
+  &:hover .change-quote__svg {
+    opacity: 0.6;
+  }
+
+  &:active .change-quote__svg {
+    opacity: 0.3;
+  }
+}

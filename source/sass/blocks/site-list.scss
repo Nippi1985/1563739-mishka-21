@@ -1,5 +1,5 @@
 .site-list {
-  display: flex; /* меняем через JS на display: flex/none для отображения */
+  display: none; /* меняем через JS на display: flex/none для отображения */
   flex-direction: column;
 
   @media (min-width: $tablet) {
@@ -43,7 +43,7 @@
 
   @media (min-width: $tablet) {
     @include text($basic-black, 15px, 24px, 700);
-    padding: 10px 19px 10px 0;
+    padding: 10px 36px 10px 0;
     background-color: transparent;
     box-shadow: none;
   }
@@ -62,7 +62,7 @@
 
   &--knitting {
     @media (min-width: $desktop) {
-      padding-left: 30px;
+      padding-left: 35px;
     }
   }
 }
@@ -87,7 +87,8 @@
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 27px;
+    padding-right: 20px;
     background-color: transparent;
 
     @include text($basic-black, 15px, 24px, 700);

@@ -1,5 +1,5 @@
 .user-list {
-  display: flex; /* меняем через JS на display: flex/none для отображения */
+  display: none; /* меняем через JS на display: flex/none для отображения */
   flex-direction: column;
 
   @media (min-width: $tablet) {
@@ -43,12 +43,12 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      min-width: 317px;
+      min-width: 314px;
       box-shadow: none;
     }
 
     @media (min-width: $desktop) {
-      min-width: auto;
+      min-width: 266px;
     }
   }
 
@@ -59,7 +59,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 84px;
+      width: 82px;
       border-right: 1px solid #f1f1f1;
       border-left: 1px solid #f1f1f1;
       box-shadow: none;
@@ -99,7 +99,7 @@
   padding-right: 50px;
 
   @media (min-width: $desktop) {
-    padding-right: 0;
+    padding-right: 2px;
   }
 }
 

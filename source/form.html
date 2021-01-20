@@ -71,8 +71,8 @@
         форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
     </div>
     <form class="order-form" method="post" action="http://echo.htmlacademy.ru">
-      <div class="order__container">
-        <fieldset class="order-form__group">
+      <div class="order__container order__container--type">
+        <fieldset class="order-form__group order-form__group--type">
           <h2 class="order-form__legend">Тип</h2>
           <ul class="order-form__list knitting-type">
             <li class="knitting-type__item">
@@ -88,7 +88,7 @@
         </fieldset>
       </div>
       <div class="order__background">
-        <div class="order__container">
+        <div class="order__container order__container--color">
           <fieldset class="order-form__group">
             <h2 class="order-form__legend order-form__legend--color">Цвет</h2>
             <ul class="order-form__list knitting-type knitting-type--color">
@@ -143,7 +143,7 @@
           </fieldset>
         </div>
       </div>
-      <div class="order__container">
+      <div class="order__container order__container--name">
         <fieldset class="order-form__group">
           <h2 class="order-form__legend order-form__legend--name">ФИО</h2>
           <ul class="order-form__list order-user">
@@ -163,7 +163,7 @@
         </fieldset>
       </div>
       <div class="order__background">
-        <div class="order__container">
+        <div class="order__container order__container--contacts">
           <fieldset class="order-form__group">
             <ul class="order-form__list order-contacts">
               <li class="order-contacts__item">
@@ -173,10 +173,10 @@
                   <use xlink:href="img/icons/sprite.svg#phone"></use>
                 </svg>
               </li>
-              <li class="order-contacts__item order-contacts__item--phone">
+              <li class="order-contacts__item">
                 <label class="order-contacts__label" for="email">E-mail</label>
                 <input class="order-contacts__input order-contacts__input--icon-mail" type="email" placeholder="Ваш Email*" name="email" id="email" required>
-                <svg class="order-contacts__svg" width="32" height="21">
+                <svg class="order-contacts__svg order-contacts__svg--mail" width="32" height="21">
                   <use xlink:href="img/icons/sprite.svg#mail"></use>
                 </svg>
               </li>
@@ -188,7 +188,7 @@
         <fieldset class="order-form__group order-form__group--textarea">
           <div class="order-form__container">
             <label class="order-form__label" for="textarea">Доп</label>
-            <textarea class="order-form__textarea" name="text" id="textarea" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="order-form__textarea" name="text" id="textarea" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
           <div class="order-form__container order-form__container--prompt">
             <span class="order-form__prompt">*Поля обязательны для заполнения</span>

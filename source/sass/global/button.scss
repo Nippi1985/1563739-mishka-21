@@ -1,5 +1,5 @@
 .button {
-  @include text($color-gray-500, 17px, 20px, 700);
+  @include text($color-gray-500, 18px, 20px, 700);
 
   &--decor {
     display: block;
@@ -27,41 +27,57 @@
     min-width: 260px;
 
     @media (min-width: $tablet) {
+      font-size: 17px;
       margin: 0;
+      min-width: 292px;
+    }
+
+    @media (min-width: $desktop) {
+      min-width: auto;
+      max-width: 292px;
     }
   }
 
   &--feedback {
     min-width: 260px;
-    margin-top: 38px;
 
     @media (min-width: $tablet) {
       order: 1;
       min-width: 175px;
       height: min-content;
-      margin-top: 0;
+      margin-top: -4px;
+      font-size: 17px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 1px;
     }
   }
 
   &--contacts {
-    margin: 0 30px;
+    margin: 0 30px 39px 30px;
 
     @media (min-width: $tablet) {
+      font-size: 17px;
       width: 230px;
-      margin: 0 auto;
+      margin: 0 auto 57px auto;
     }
 
     @media (min-width: $desktop) {
       height: 52px;
-      margin-left: 150px;
+      margin-left: 175px;
       grid-column-end: 2;
       grid-column-start: 1;
       grid-row-end: 4;
       grid-row-start: 3;
+      margin-top: 84px;
+      margin-bottom: 4px;
     }
   }
 
   &--order {
+    font-size: 17px;
+    line-height: 16px;
     width: 100%;
     min-height: 52px;
     cursor: pointer;
