@@ -10,6 +10,14 @@
     padding-bottom: 19px;
     background-color: $color-gray-200;
   }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 46px;
+
+    &--contacts {
+      padding-bottom: 48px;
+    }
+  }
 }
 
 .order__container {
@@ -24,6 +32,10 @@
   &--text {
     margin-top: 17px;
     margin-bottom: 29px;
+
+    @media (min-width: $desktop) {
+      margin-top: 112px;
+    }
   }
 
   &--type {
@@ -50,6 +62,10 @@
     @media (min-width: $tablet) {
       margin-bottom: 50px;
     }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 50px;
+    }
   }
 
   &--contacts {
@@ -70,7 +86,11 @@
 
     &--text {
       max-width: 702px;
-      margin: 54px auto 0 auto;
+      margin: 112px auto 0 auto;
+    }
+
+    &--contacts {
+      padding-top: 67px;
     }
   }
 }

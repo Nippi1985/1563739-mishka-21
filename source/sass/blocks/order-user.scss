@@ -2,6 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  @media (min-width: $desktop) {
+    padding-top: 56px;
+  }
 }
 
 .order-user__item {
@@ -13,6 +17,10 @@
   @media (min-width: $tablet) {
     flex-wrap: nowrap;
     margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 175px;
   }
 }
 
@@ -31,6 +39,10 @@
     margin-right: 27px;
     margin-top: 10px;
     width: min-content;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 25px;
   }
 }
 

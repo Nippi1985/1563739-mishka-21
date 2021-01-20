@@ -20,6 +20,11 @@
     flex-wrap: nowrap;
     margin-bottom: 41px;
   }
+
+  @media (min-width: $desktop) {
+    margin-right: 175px;
+    margin-left: 62px;
+  }
 }
 
 .order-contacts__svg {
@@ -33,6 +38,10 @@
     top: -5px;
   }
 
+  @media (min-width: $desktop) {
+    right: 8px;
+  }
+
   &--mail {
     right: 3px;
     top: 36px;
@@ -40,6 +49,10 @@
     @media (min-width: $tablet) {
       top: 0;
       right: 22px;
+    }
+
+    @media (min-width: $desktop) {
+      right: 4px;
     }
   }
 }
@@ -56,6 +69,10 @@
   @media (min-width: $tablet) {
     min-width: 60px;
     max-width: 170px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 115px;
   }
 
   &::before {
