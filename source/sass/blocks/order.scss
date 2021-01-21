@@ -7,49 +7,90 @@
 
   @media (min-width: $tablet) {
     display: block;
+    padding-bottom: 19px;
     background-color: $color-gray-200;
-    padding-bottom: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 46px;
+
+    &--contacts {
+      padding-bottom: 48px;
+    }
   }
 }
 
 .order__container {
-  margin: 0 30px 2px 30px;
   min-width: 260px;
+  margin: 0 30px 2px 30px;
+
+  @media (min-width: $tablet) {
+    margin: 0 50px 0 50px;
+    padding-top: 46px;
+  }
 
   &--text {
     margin-top: 17px;
     margin-bottom: 29px;
+
+    @media (min-width: $desktop) {
+      margin-top: 112px;
+    }
   }
 
   &--type {
-    margin-bottom: 18px;
+    margin-bottom: 9px;
+
+    @media (min-width: $tablet) {
+      padding-top: 0;
+    }
   }
 
   &--color {
     margin-bottom: 32px;
+
+    @media (min-width: $tablet) {
+      padding-top: 4px;
+      margin-bottom: 0;
+    }
   }
 
   &--name {
     margin-bottom: 35px;
+    padding-top: 56px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-bottom: 50px;
+    }
   }
 
   &--contacts {
     margin-bottom: 34px;
+    padding-top: 66px;
   }
 
-  @media (min-width: $tablet) {
-    margin: 0 50px 0 50px;
-    padding-top: 50px;
+  &--comment {
+    @media (min-width: $tablet) {
+      margin-bottom: 49px;
+    }
   }
 
   @media (min-width: $desktop) {
     max-width: 1050px;
-    padding-top: 0;
     margin: 0 auto 0 auto;
+    padding-top: 0;
 
     &--text {
-      margin: 54px auto 0 auto;
       max-width: 702px;
+      margin: 112px auto 0 auto;
+    }
+
+    &--contacts {
+      padding-top: 67px;
     }
   }
 }

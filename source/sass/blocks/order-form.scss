@@ -5,6 +5,14 @@
 
   &--type {
     margin-bottom: 5px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 8px;
+    }
   }
 
   @media (min-width: $tablet) {
@@ -12,6 +20,17 @@
 
     &--textarea {
       flex-wrap: wrap;
+
+      @media (min-width: $desktop) {
+        padding-top: 51px;
+        margin-right: 175px;
+      }
+    }
+  }
+
+  &--color {
+    @media (min-width: $desktop) {
+      padding-top: 21px;
     }
   }
 }
@@ -38,6 +57,43 @@
   overflow: hidden;
   text-transform: uppercase;
 
+  @media (min-width: $tablet) {
+    margin-top: 53px;
+    margin-right: 127px;
+
+    &--color {
+      margin-top: 44px;
+
+      @media (min-width: $tablet) {
+        margin-top: 63px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 61px;
+    margin-top: 64px;
+    margin-right: 73px;
+
+    &--color {
+      margin-top: 46px;
+    }
+  }
+
+  &--name {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet) {
+      margin-top: 12px;
+      margin-right: 107px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-top: 69px;
+      margin-right: 56px;
+    }
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -50,23 +106,6 @@
 
     @media (min-width: $tablet) {
       display: none;
-    }
-  }
-
-  &--name {
-    margin-bottom: 30px;
-
-    @media (min-width: $tablet) {
-      margin-top: 26px;
-    }
-  }
-
-  @media (min-width: $tablet) {
-    margin-top: 63px;
-    margin-right: 100px;
-
-    &--color {
-      margin-top: 44px;
     }
   }
 }
@@ -85,8 +124,13 @@
 
   @media (min-width: $tablet) {
     min-width: 60px;
-    max-width: 160px;
+    max-width: 168px;
     margin-top: 19px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 113px;
+    margin-left: 62px;
   }
 
   &::before {
@@ -121,6 +165,10 @@
     margin-bottom: 53px;
   }
 
+  @media (min-width: $desktop) {
+    margin-bottom: 47px;
+  }
+
 
   &:hover {
     border: 2px solid $color-cyan-200;
@@ -153,10 +201,16 @@
   user-select: none;
 
   @media (min-width: $tablet) {
+    font-size: 17px;
+    line-height: 30px;
     order: 1;
     width: 50%;
-    margin-top: 15px;
+    margin-top: 11px;
     margin-bottom: 0;
     text-align: right;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 11px;
   }
 }
