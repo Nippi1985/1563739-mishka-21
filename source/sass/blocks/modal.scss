@@ -57,6 +57,8 @@
     font-size: 30px;
     line-height: 57px;
     max-width: 100%;
+    margin-top: 39px;
+    margin-bottom: 12px;
   }
 }
 
@@ -122,6 +124,7 @@
 
   @media (min-width: $tablet) {
     width: 112px;
+    margin-top: 19px;
   }
 
   &::before {
