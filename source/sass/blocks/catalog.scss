@@ -7,13 +7,16 @@
   margin: 0 30px;
 
   @media (min-width: $tablet) {
-    margin: 0 50px;
+    margin: 76px 50px 0 50px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 124px;
   }
 }
 
 .catalog__list {
   @include reset-list;
-  /*width: 260px;*/
   margin: 0 auto;
 
   @media (min-width: $tablet) {
@@ -32,7 +35,8 @@
 
   @media (min-width: $tablet) {
     box-sizing: border-box;
-    margin-top: 54px;
+    margin-top: 0;
+    margin-bottom: 51px;
     margin-right: auto;
     margin-left: auto;
   }

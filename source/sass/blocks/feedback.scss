@@ -1,55 +1,66 @@
 .feedback {
   position: relative;
 
+  @media (min-width: $tablet) {
+    background-image: url("../img/review.png");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop) {
+      background-image: none;
+    }
+  }
+
   &::after {
-    background-image: url("../img/zigzag-line-mob.svg");
-    bottom: 0;
     content: "";
-    height: 6px;
-    left: 0;
     position: absolute;
-    width: 100%;
+    bottom: 0;
+    left: 0;
     z-index: 999;
+    width: 100%;
+    height: 6px;
+    background-image: url("../img/zigzag-line-mob.svg");
 
     @media (min-width: $tablet) {
-      background-image: url("../img/zigzag-line-tablet.svg");
       height: 17px;
+      background-image: url("../img/zigzag-line-tablet.svg");
     }
 
     @media (min-width: $desktop) {
-      background-image: url("../img/zigzag-line-desktop.svg");
-      bottom: 0;
       content: "";
-      height: 23px;
-      left: 50%;
-      transform: translateX(-50%);
       position: absolute;
-      max-width: 1050px;
+      bottom: 0;
+      left: 50%;
       z-index: 999;
+      max-width: 1050px;
+      height: 23px;
+      background-image: url("../img/zigzag-line-desktop.svg");
+      transform: translateX(-50%);
     }
   }
 }
 
 .feedback__container {
-  margin: 0 30px;
   min-width: 260px;
+  margin: 0 30px;
   padding-bottom: 51px;
 
   @media (min-width: $tablet) {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 0 50px;
-    position: relative;
     padding-bottom: 104px;
   }
 
   @media (min-width: $desktop) {
     box-sizing: border-box;
-    margin: 138px 50px 70px 74px;
     max-width: 1050px;
-    padding-left: 150px;
+    margin: 60px auto 70px auto;
     padding-bottom: 156px;
+    padding-left: 175px;
+    background-image: url("../img/review.png");
+    background-repeat: no-repeat;
   }
 }
 
@@ -58,9 +69,9 @@
   margin-bottom: 38px;
 
   @media (min-width: $tablet) {
-    bottom: 95px;
     position: absolute;
     right: 0;
+    bottom: 95px;
     width: 175px;
   }
 
@@ -70,13 +81,13 @@
 }
 
 .change-quote {
+  box-sizing: border-box;
+  width: 50%;
+  height: 52px;
   background-color: $basic-white;
   border: 1px solid $color-gray-100;
-  box-sizing: border-box;
-  cursor: pointer;
-  height: 52px;
   outline: none;
-  width: 50%;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     border: none;

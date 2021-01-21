@@ -78,16 +78,17 @@
     margin-bottom: 14px;
 
     @media (min-width: $tablet) {
+      @include text($basic-black, 43px, 50px, 700);
       order: 0;
       width: 70%;
-
-      @include text($basic-black, 43px, 50px, 700);
       margin-bottom: 39px;
+      margin-top: 84px;
     }
 
     @media (min-width: $desktop) {
       @include text($basic-black, 53px, 57px, 700);
       margin-bottom: 36px;
+      margin-top: 78px;
     }
   }
 }

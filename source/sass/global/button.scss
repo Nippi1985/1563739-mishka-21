@@ -27,9 +27,9 @@
     min-width: 260px;
 
     @media (min-width: $tablet) {
-      font-size: 17px;
-      margin: 0;
       min-width: 292px;
+      margin: 0;
+      font-size: 17px;
     }
 
     @media (min-width: $desktop) {
@@ -45,12 +45,12 @@
       order: 1;
       min-width: 175px;
       height: min-content;
-      margin-top: -4px;
+      margin-top: 79px;
       font-size: 17px;
     }
 
     @media (min-width: $desktop) {
-      margin-top: 1px;
+      margin-top: 80px;
     }
   }
 
@@ -58,28 +58,28 @@
     margin: 0 30px 39px 30px;
 
     @media (min-width: $tablet) {
-      font-size: 17px;
       width: 230px;
       margin: 0 auto 57px auto;
+      font-size: 17px;
     }
 
     @media (min-width: $desktop) {
       height: 52px;
+      margin-top: 84px;
+      margin-bottom: 4px;
       margin-left: 175px;
       grid-column-end: 2;
       grid-column-start: 1;
       grid-row-end: 4;
       grid-row-start: 3;
-      margin-top: 84px;
-      margin-bottom: 4px;
     }
   }
 
   &--order {
-    font-size: 17px;
-    line-height: 16px;
     width: 100%;
     min-height: 52px;
+    font-size: 17px;
+    line-height: 16px;
     cursor: pointer;
 
     @media (min-width: $tablet) {
@@ -92,12 +92,26 @@
   }
 
   &--video {
+    @media (min-width: $tablet) {
+      box-sizing: border-box;
+      min-width: 584px;
+      min-height: 52px;
+      padding-top: 17px;
+      padding-bottom: 15px;
+      font-size: 17px;
+      line-height: 16px;
+    }
+
     @media (min-width: $desktop) {
+      min-width: 230px;
       max-width: 230px;
     }
   }
 
   &--modal {
+    font-size: 17px;
+    line-height: 16px;
+    z-index: 999;
     display: block;
     box-sizing: border-box;
     width: 260px;
@@ -108,7 +122,6 @@
     background-color: $color-cyan-200;
     border: none;
     cursor: pointer;
-    z-index: 999;
 
     &:hover {
       background-color: $color-cyan-400;

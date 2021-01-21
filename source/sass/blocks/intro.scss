@@ -14,10 +14,9 @@
       background-image: url("../img/zigzag.svg");
 
       @media (min-width: $desktop) {
-        background-image: url("../img/zigzag-desktop.svg");
+        background-image: url("../img/zigzag-desktop3.svg");
         background-position: center;
         background-repeat: repeat-x;
-        left: 0;
         bottom: -14px;
         height: 34px;
       }
@@ -35,7 +34,11 @@
     max-width: 1050px;
     margin: 0 auto;
     padding-top: 101px;
-    padding-bottom: 100px;
+    padding-bottom: 77px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 99px;
   }
 }
 
