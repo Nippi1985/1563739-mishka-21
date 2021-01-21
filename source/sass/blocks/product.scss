@@ -6,7 +6,6 @@
     display: flex;
     flex-wrap: nowrap;
     box-sizing: border-box;
-    /*max-width: 668px;*/
   }
 
   @media (min-width: $desktop) {
@@ -53,22 +52,6 @@
   @include text($basic-black, 15px, 24px, 700);
   position: relative;
 
-  /*&::before {
-    content: "";
-    position: absolute;
-    top: -22px;
-    left: 0;
-    width: 204px;
-    height: 1px;
-    background-color: $color-gray-100;
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet) {
-      top: -23px;
-      width: 268px;
-    }
-  }*/
-
   @media (min-width: $tablet) {
     font-size: 17px;
   }
@@ -105,10 +88,11 @@
 .product__title {
   @include reset-heading;
   @include text($basic-black, 17px, 24px, 700);
-  margin-top: 27px;
+  margin-top: 26px;
+  margin-bottom: 6px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     font-size: 20px;
   }
 
@@ -126,7 +110,7 @@
   @include reset-text;
   @include text($color-gray-500, 13px, 30px, 400);
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet) {
     font-size: 15px;

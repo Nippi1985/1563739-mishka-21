@@ -34,12 +34,13 @@
 }
 
 .video__background {
-  padding: 0 33px 33px 33px;
+  padding: 0 32px 33px 32px;
 
   @media (min-width: $tablet) {
     order: 2;
     width: 100%;
-    padding: 0 42px 46px 42px;
+    padding: 0 41px 46px 41px;
+    margin-bottom: 63px;
   }
 
   @media (min-width: $desktop) {
@@ -60,6 +61,7 @@
   object-fit: cover;
 
   @media (min-width: $tablet) {
+    box-sizing: border-box;
     width: 100%;
   }
 
@@ -75,7 +77,6 @@
 
 .video__content {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -90,8 +91,10 @@
   @media (min-width: $tablet) {
     order: 1;
     width: 100%;
-    margin-left: 96px;
-    font-size: 24px;
+    margin-left: 106px;
+    font-size: 20px;
+    margin-top: 36px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop) {
@@ -107,12 +110,17 @@
     content: "";
     position: absolute;
     top: 50%;
-    left: -55px;
+    left: -58px;
     width: 32px;
     height: 22px;
     background-image: url("../img/video.svg");
     background-repeat: no-repeat;
     transform: translateY(-50%);
+
+    @media (min-width: $tablet) {
+      left: -65px;
+      top: 8px;
+    }
 
     @media (min-width: $desktop) {
       top: -27px;
@@ -124,7 +132,7 @@
 .video__text {
   @include reset-text;
   @include text($color-gray-500, 13px, 24px, 400);
-  margin: 35px 0 31px 0;
+  margin: 30px 0 41px 0;
 
   @media (min-width: $tablet) {
     margin: 0 0 40px 0;
