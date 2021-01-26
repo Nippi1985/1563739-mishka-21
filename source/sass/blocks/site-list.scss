@@ -41,6 +41,14 @@
     color: rgba($basic-black, 0.3);
   }
 
+  &--not-active {
+    &:hover,
+    &:focus {
+      color: $basic-black;
+      user-select: none;
+    }
+  }
+
   @media (min-width: $tablet) {
     @include text($basic-black, 15px, 24px, 700);
     padding: 10px 36px 10px 0;
