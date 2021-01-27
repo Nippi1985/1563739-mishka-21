@@ -134,7 +134,10 @@
   }
 
   @media (min-width: $desktop) {
+    display: flex;
     margin-bottom: 0;
+    width: 150px;
+    min-height: 30px;
   }
 
   &::before {
@@ -154,6 +157,10 @@
       left: -80px;
       width: 52px;
       height: 52px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 19px;
     }
   }
 }
